@@ -84,7 +84,7 @@ const OutPutPage: React.FC = () => {
             variant="outlined"
             startIcon={<PreviewIcon />}
             onClick={() =>
-              window.open("https://portfoliosite-bgxp25fus-omitea8.vercel.app/")
+              window.open("https://portfoliosite-cyan.vercel.app//")
             }
           >
             Preview
