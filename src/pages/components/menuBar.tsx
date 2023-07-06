@@ -1,8 +1,7 @@
 import * as React from "react";
-import { AppBar, Typography, Stack, Button } from "@mui/material";
+import { AppBar, Stack, Button, Typography } from "@mui/material";
 import router from "next/router";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function MenuBar() {
   return (
@@ -15,11 +14,21 @@ export default function MenuBar() {
       }}
     >
       <Stack alignItems={"center"}>
+        <Stack direction="row" alignItems={"center"} spacing={2}>
+          <Image src="/omitea.png" alt="omitea Logo" width={50} height={50} />
+          <Typography variant="h6" color={"black"}>
+            omi.t Portfolio
+          </Typography>
+        </Stack>
         <Stack direction="row" spacing={2} alignItems={"center"}>
-          <Image src="/omitea.png" alt="Omitea Logo" width={50} height={50} />
-          <Link href="/">
-            <Typography color={"black"}>omi.t</Typography>
-          </Link>
+          <Button
+            style={{ color: "black" }}
+            onClick={() => {
+              router.push("/");
+            }}
+          >
+            About
+          </Button>
           <Button
             style={{ color: "black" }}
             onClick={() => {
