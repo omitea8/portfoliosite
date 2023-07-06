@@ -23,18 +23,18 @@ export default function MenuBar() {
           <Button
             style={{ color: "black" }}
             onClick={() => {
-              router.push("/history.page");
+              router.push("/skill.page");
             }}
           >
-            History
+            Skill
           </Button>
           <Button
             style={{ color: "black" }}
             onClick={() => {
-              router.push("/other.page");
+              router.push("/output.page");
             }}
           >
-            Other
+            Output
           </Button>
         </Stack>
       </Stack>

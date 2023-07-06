@@ -1,14 +1,16 @@
-import Head from "next/head";
+import { Stack, Typography } from "@mui/material";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>omi.t Portfolio site</title>
-      </Head>
-      <main>
-        <h1>Profile</h1>
-      </main>
+      <Stack spacing={3}>
+        <Typography variant="h4">About</Typography>
+        <Image src="/omitea.png" alt="Omitea Logo" width={150} height={150} />
+        <Typography variant="body1">プロフィール文を書く</Typography>
+        <Typography variant="h4">Job Career</Typography>
+        <Typography variant="body1">職歴を書く</Typography>
+      </Stack>
     </>
   );
 }
