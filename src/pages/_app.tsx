@@ -8,13 +8,12 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>omi.t Portfolio</title>
-      </Head>{" "}
+      </Head>
       <Container maxWidth={"md"} sx={{ paddingBottom: "30px" }}>
         <Stack spacing={3}>
           <MenuBar />
-
           <Component {...pageProps} />
-        </Stack>{" "}
+        </Stack>
       </Container>
     </>
   );
