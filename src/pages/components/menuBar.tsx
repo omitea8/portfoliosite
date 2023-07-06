@@ -1,10 +1,7 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import { AppBar, Typography, Stack, Button } from "@mui/material";
 import router from "next/router";
 import Image from "next/image";
-import { Stack } from "@mui/material";
 import Link from "next/link";
 
 export default function MenuBar() {
