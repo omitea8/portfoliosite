@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import router from "next/router";
 import Image from "next/image";
 import { Stack } from "@mui/material";
+import Link from "next/link";
 
 export default function MenuBar() {
   return (
@@ -19,17 +20,9 @@ export default function MenuBar() {
       <Stack alignItems={"center"}>
         <Stack direction="row" spacing={2} alignItems={"center"}>
           <Image src="/omitea.png" alt="Omitea Logo" width={50} height={50} />
-          <Typography color={"black"}>omi.t</Typography>
-        </Stack>
-        <Stack direction="row" spacing={2}>
-          <Button
-            style={{ color: "black" }}
-            onClick={() => {
-              router.push("/profile.page");
-            }}
-          >
-            Profile
-          </Button>
+          <Link href="/">
+            <Typography color={"black"}>omi.t</Typography>
+          </Link>
           <Button
             style={{ color: "black" }}
             onClick={() => {
