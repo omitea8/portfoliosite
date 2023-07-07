@@ -36,21 +36,25 @@ const OutPutPage: React.FC = () => {
             backend
           </Button>
         </Stack>
-        <Stack direction="row" spacing={3}>
-          <Image
-            src="/caita1.png"
-            alt="caita"
-            width={400}
-            height={200}
-            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-          />
-          <Image
-            src="/caita2.png"
-            alt="caita"
-            width={400}
-            height={200}
-            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-          />
+        <Stack direction="row" spacing={3} sx={{ flexWrap: "wrap" }}>
+          <Box sx={{ flex: "1 1 400px", maxWidth: "400px" }}>
+            <Image
+              src="/caita1.png"
+              alt="caita"
+              width={400}
+              height={200}
+              style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+            />
+          </Box>
+          <Box sx={{ flex: "1 1 400px", maxWidth: "400px" }}>
+            <Image
+              src="/caita2.png"
+              alt="caita"
+              width={400}
+              height={200}
+              style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+            />
+          </Box>
         </Stack>
         <Typography>
           現在開発中のWebアプリケーション。画像の投稿サービスです。既存の画像投稿サービスに自分の好みにぴったりとくるものがないため開発に至りました。現在はユーザー登録・画像の投稿・編集・削除など基本的な機能しかありませんが、今後は画像閲覧ページの色や背景をカスタマイズできる機能を作成していく予定です。
