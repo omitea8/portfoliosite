@@ -35,7 +35,7 @@ const SkillPage: React.FC = () => {
             【JavaScript＆CSS】ガチで学びたい人のためのWEB開発徹底実践（フロントエンド編）
           </Link>
           <Typography>
-            フロントエンドの技術の一部であるHTMLとCSSの基礎を学びました。
+            HTMLは学生のころ少しだけ触ったことがあったため、比較的入りやすいと思いまずはHTMLとCSSの基礎を学びました。
           </Typography>
         </Stack>
         <Stack>
@@ -57,7 +57,7 @@ const SkillPage: React.FC = () => {
             </Link>
           </Stack>
           <Typography>
-            JavaScriptの基礎とTypeScriptの基礎を学びました。加えてReactの基礎や機能などを学びました。現在のフロントエンドは、ReactやNext.jsなどを使っているときいたため今回はReactを選択しました。
+            現在のフロントエンドは、ReactやNext.jsなどを使っているときいたため今回はReactを選択しました。また、JavaScriptの基礎は他の言語でも応用できると思い、ひとまずはReactで使う技術のみに集中しました。
           </Typography>
         </Stack>
         <Stack>
@@ -66,7 +66,7 @@ const SkillPage: React.FC = () => {
             わかりみSQL
           </Link>
           <Typography>
-            仕事でアプリケーションを作成するときにアプリケーション全体の知識があった方が良いと考えたため、まずデータベースについて基礎的なことを学びました。
+            実際にアプリケーションを作成するときにアプリケーション全体の知識があった方が良いと考えたため、まずデータベースについて基礎的なことを学びました。
           </Typography>
         </Stack>
         <Stack>
@@ -90,6 +90,20 @@ const SkillPage: React.FC = () => {
           </Typography>
         </Stack>
         <Stack>
+          <Typography variant="h6">2022/12~ スクラム開発について</Typography>
+          <Link
+            href={
+              "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Japanese.pdf"
+            }
+            target="_blank"
+          >
+            スクラムガイド 2020
+          </Link>
+          <Typography>
+            認定スクラムマスターの資格保有者とスクラムガイドの読み合わせを通してスクラムについて学びました。開発手法としてアジャイル開発やスクラムが多く使われていると知り学んでおいた方が良いと感じたためこの読み合わせを開催してもらいました。また、自主開発においてもスクラム開発で行っています。
+          </Typography>
+        </Stack>
+        <Stack>
           <Typography variant="h6">
             2023/01~ TypeScript, React,etc...
           </Typography>
@@ -97,7 +111,7 @@ const SkillPage: React.FC = () => {
             自主開発(caita)
           </Link>
           <Typography>
-            学んだ知識を活かしてさらに実践的なものを作ろうと考えていたためこの開発に至りました。
+            学んだ知識を活かしてさらに実践的なものを作ろうと考えていたためこの開発に至りました。また、このアプリケーションが自身のエンジニアリングの動機でもあります。
           </Typography>
         </Stack>
         <Stack>
@@ -117,16 +131,6 @@ const SkillPage: React.FC = () => {
           Studyと重複するものは省いています。
         </Typography>
         <ul>
-          <li>
-            <Link
-              href={
-                "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Japanese.pdf"
-              }
-              target="_blank"
-            >
-              スクラムガイド 2020
-            </Link>
-          </li>
           <li>
             <Link href={"https://amzn.asia/d/9UkRVZK"} target="_blank">
               リーダブルコード
