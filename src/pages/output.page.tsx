@@ -20,7 +20,7 @@ const OutPutPage: React.FC = () => {
             startIcon={<PreviewIcon />}
             onClick={() => window.open("https://caita.today/")}
           >
-            Preview
+            visit
           </Button>
           <Button
             variant="outlined"
@@ -40,11 +40,11 @@ const OutPutPage: React.FC = () => {
           >
             backend
           </Button>
-          <Typography variant="body2">
-            HTML/CSS, TypeScript, React, Ruby on Rails, AWS(S3), SQLite,
-            PostgresSQL, Vercel, Render, MUI, GitHub
-          </Typography>
         </Stack>
+        <Typography variant="body2">
+          HTML/CSS, TypeScript, React, Ruby on Rails, AWS(S3), SQLite,
+          PostgresSQL, Vercel, Render, MUI, GitHub
+        </Typography>
         <Stack direction="row" spacing={3} flexWrap={"wrap"}>
           <Image
             src="/caita1.png"
@@ -86,7 +86,7 @@ const OutPutPage: React.FC = () => {
             startIcon={<PreviewIcon />}
             onClick={() => window.open("https://ai-portal.tech/")}
           >
-            Preview
+            visit
           </Button>
         </Stack>
         <Typography variant="body2">
@@ -138,7 +138,7 @@ const OutPutPage: React.FC = () => {
               window.open("https://portfoliosite-cyan.vercel.app//")
             }
           >
-            Preview
+            visit
           </Button>
           <Button
             variant="outlined"
@@ -178,7 +178,7 @@ const OutPutPage: React.FC = () => {
               )
             }
           >
-            Preview
+            visit
           </Button>
         </Stack>
         <Typography>
