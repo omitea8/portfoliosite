@@ -1,6 +1,7 @@
-import { Button, IconButton, Stack, Typography } from "@mui/material";
+import { Box, Button, IconButton, Stack, Typography } from "@mui/material";
 import PreviewIcon from "@mui/icons-material/Preview";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Image from "next/image";
 
 const OutPutPage: React.FC = () => {
   return (
@@ -36,17 +37,18 @@ const OutPutPage: React.FC = () => {
           </Button>
         </Stack>
         <Stack direction="row" spacing={3}>
-          <img
+          <Image
             src="/caita1.png"
             alt="caita"
-            width={300}
+            width={400}
+            height={200}
             style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
           />
-
-          <img
+          <Image
             src="/caita2.png"
             alt="caita"
-            width={300}
+            width={400}
+            height={200}
             style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
           />
         </Stack>
