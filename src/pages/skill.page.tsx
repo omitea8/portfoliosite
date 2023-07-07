@@ -57,7 +57,7 @@ const SkillPage: React.FC = () => {
             </Link>
           </Stack>
           <Typography>
-            現在のフロントエンドは、ReactやNext.jsなどを使っているときいたため今回はReactを選択しました。また、JavaScriptの基礎は他の言語でも応用できると思い、ひとまずはReactで使う技術のみに集中しました。
+            2022年のフロントエンドはReactやNext.jsなどが多く使われていると知り、今回はReactを選択しました。また、JavaScriptの基礎は他の言語でも応用できると思い、ひとまずはReactで使う技術のみに集中しました。
           </Typography>
         </Stack>
         <Stack>
@@ -66,7 +66,7 @@ const SkillPage: React.FC = () => {
             わかりみSQL
           </Link>
           <Typography>
-            実際にアプリケーションを作成するときにアプリケーション全体の知識があった方が良いと考えたため、まずデータベースについて基礎的なことを学びました。
+            実際にアプリケーションを作成するときに関連する技術全体の知識があった方が良いと考えたため、データベースについて基礎的なことを学びました。
           </Typography>
         </Stack>
         <Stack>
@@ -75,7 +75,7 @@ const SkillPage: React.FC = () => {
             WEB技術がこれ1冊でしっかりわかる教科書
           </Link>
           <Typography>
-            Webの仕組みや用語について知らないことが多すぎたため、どうやってWebが成り立っているかなど基礎的なことを学びました。
+            Webの仕組みや用語について体系的に学んだ経験がなかったため、どうやってWebが成り立っているかなど基礎的なことを学びました。
           </Typography>
         </Stack>
         <Stack>
@@ -86,7 +86,7 @@ const SkillPage: React.FC = () => {
           <Typography>
             簡単なWebアプリケーション作成を通してバックエンドの技術やフロントエンドとの関わりを知るためについて学びました。日本企業ではRuby
             on
-            Railsでのアプリケーション開発も活発ときいたのでこのチュートリアルを選択しました。
+            Railsでのアプリケーション開発も活発と知り、このチュートリアルを選択しました。
           </Typography>
         </Stack>
         <Stack>
