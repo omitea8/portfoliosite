@@ -89,6 +89,22 @@ const OutPutPage: React.FC = () => {
             Preview
           </Button>
         </Stack>
+        <Stack direction="row" spacing={3} flexWrap={"wrap"}>
+          <Image
+            src="/ai1.png"
+            alt="ai portal"
+            width={400}
+            height={200}
+            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+          />
+          <Image
+            src="/ai2.png"
+            alt="ai portal"
+            width={400}
+            height={200}
+            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+          />
+        </Stack>
         <Typography>
           家族と2人で開発中のWebアプリケーション。1日スプリントのスクラムでGW中(5日間)で開発しました。フロントエンドとスクラムマスターを担当。OpenAIをもっと気軽に触ってほしいという気持ちから開発に至りました。
         </Typography>
@@ -123,6 +139,15 @@ const OutPutPage: React.FC = () => {
           >
             GitHub
           </Button>
+        </Stack>
+        <Stack direction="row" spacing={3} flexWrap={"wrap"}>
+          <Image
+            src="/portfolio1.png"
+            alt="PortfolioSite"
+            width={400}
+            height={200}
+            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+          />
         </Stack>
         <Typography>
           このWebページです。ポートフォリオ用に作成しました。
