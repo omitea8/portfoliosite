@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import PreviewIcon from "@mui/icons-material/Preview";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
