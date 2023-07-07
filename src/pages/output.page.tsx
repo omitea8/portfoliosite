@@ -105,9 +105,18 @@ const OutPutPage: React.FC = () => {
             style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
           />
         </Stack>
-        <Typography>
-          家族と2人で開発中のWebアプリケーション。1日スプリントのスクラムでGW中(5日間)で開発しました。フロントエンドとスクラムマスターを担当。OpenAIをもっと気軽に触ってほしいという気持ちから開発に至りました。
-        </Typography>
+        <Stack>
+          <Typography>
+            家族と2人で開発中のWebアプリケーション。フロントエンドとスクラムマスターを担当。
+          </Typography>
+          <Typography>
+            もっと気軽にOpenAIに気軽に触ってほしいという気持ちから開発に至りました。OpenAIに触って独自のAIを作りたい人は簡単なプロンプトを入力しただけで自分だけのAIを作ることができ、ただ触って楽しみたい人はそこでできたAIを使って1往復の会話をすることができます。
+            詳しい技術がわからなくても気軽に触れるように「直感的でシンプルに」をコンセプトに作成しています。
+          </Typography>
+          <Typography>
+            開発は1日スプリントのスクラムでGW中(5日間)で開発しました。右の画像はスクラムマスターとしてスプリントレトロスペクティブをしたときの様子です。2人で開発することで、役割分担やコミュニケーションの大切さや、実践的なコードレビューなどを経験することができました。
+          </Typography>
+        </Stack>
         <Typography variant="body2">
           HTML/CSS, TypeScript, React/Next.js, Node.js(非担当),
           PostgreSQL(非担当), OpenAI, Vercel, Render, MSW, MUI, GitHub
