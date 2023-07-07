@@ -40,6 +40,10 @@ const OutPutPage: React.FC = () => {
           >
             backend
           </Button>
+          <Typography variant="body2">
+            HTML/CSS, TypeScript, React, Ruby on Rails, AWS(S3), SQLite,
+            PostgresSQL, Vercel, Render, MUI, GitHub
+          </Typography>
         </Stack>
         <Stack direction="row" spacing={3} flexWrap={"wrap"}>
           <Image
@@ -73,10 +77,6 @@ const OutPutPage: React.FC = () => {
             現在はアカウントの登録・画像の投稿/編集/削除など基本的な機能しかありませんが、今後は画像閲覧ページの色や背景をカスタマイズできる機能を作成していく予定です。
           </Typography>
         </Stack>
-        <Typography variant="body2">
-          HTML/CSS, TypeScript, React, Ruby on Rails, AWS(S3), SQLite,
-          PostgresSQL, Vercel, Render, MUI, GitHub
-        </Typography>
       </Stack>
       <Stack spacing={1}>
         <Stack direction="row" alignItems={"center"} spacing={1}>
@@ -89,6 +89,10 @@ const OutPutPage: React.FC = () => {
             Preview
           </Button>
         </Stack>
+        <Typography variant="body2">
+          HTML/CSS, TypeScript, React/Next.js, Node.js(非担当),
+          PostgreSQL(非担当), OpenAI, Vercel, Render, MSW, MUI, GitHub
+        </Typography>
         <Stack direction="row" spacing={3} flexWrap={"wrap"}>
           <Image
             src="/ai1.png"
@@ -117,10 +121,6 @@ const OutPutPage: React.FC = () => {
             開発は1日スプリントのスクラムでGW中(5日間)で開発しました。右の画像はスクラムマスターとしてスプリントレトロスペクティブをしたときの様子です。2人で開発することで、役割分担やコミュニケーションの大切さや、実践的なコードレビューなどを経験することができました。
           </Typography>
         </Stack>
-        <Typography variant="body2">
-          HTML/CSS, TypeScript, React/Next.js, Node.js(非担当),
-          PostgreSQL(非担当), OpenAI, Vercel, Render, MSW, MUI, GitHub
-        </Typography>
       </Stack>
       <Stack spacing={1}>
         <Stack
@@ -130,6 +130,7 @@ const OutPutPage: React.FC = () => {
           flexWrap={"wrap"}
         >
           <Typography variant="h5">omi.t portfolio</Typography>
+
           <Button
             variant="outlined"
             startIcon={<PreviewIcon />}
@@ -149,6 +150,9 @@ const OutPutPage: React.FC = () => {
             GitHub
           </Button>
         </Stack>
+        <Typography variant="body2">
+          HTML/CSS, TypeScript, React/Next.js, MUI, Vercel, GitHub
+        </Typography>
         <Stack direction="row" spacing={3} flexWrap={"wrap"}>
           <Image
             src="/portfolio1.png"
@@ -160,9 +164,6 @@ const OutPutPage: React.FC = () => {
         </Stack>
         <Typography>
           このWebページです。ポートフォリオ用に作成しました。
-        </Typography>
-        <Typography variant="body2">
-          HTML/CSS, TypeScript, React/Next.js, MUI, Vercel, GitHub
         </Typography>
       </Stack>
       <Stack spacing={1}>
