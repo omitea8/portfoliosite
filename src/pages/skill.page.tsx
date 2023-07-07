@@ -28,57 +28,87 @@ const SkillPage: React.FC = () => {
       </Stack>
 
       <Stack spacing={1}>
-        <Typography variant="h4">Study</Typography>
-        <Typography>
-          2022/04~ <StrongWords>HTML5, CSS3</StrongWords> -
+        <Stack>
+          <Typography variant="h4">Study</Typography>
+          <Typography variant="h6">2022/04~ HTML5, CSS3</Typography>
           <Link href={"https://www.udemy.com/share/102zAI/"} target="_blank">
             【JavaScript＆CSS】ガチで学びたい人のためのWEB開発徹底実践（フロントエンド編）
           </Link>
-        </Typography>
-        <Typography>
-          2022/06~ <StrongWords>JavaScript, TypeScript, React</StrongWords> -
-          <Link
-            href={"https://oukayuka.booth.pm/items/2368045"}
-            target="_blank"
-          >
-            りあクト!(1)
-          </Link>
-          ,{" "}
-          <Link
-            href={"https://oukayuka.booth.pm/items/2368019"}
-            target="_blank"
-          >
-            りあクト!(2)
-          </Link>
-        </Typography>
-        <Typography>
-          2022/09~ <StrongWords>SQL全般(PostgreSQL)</StrongWords> -
+          <Typography>
+            フロントエンドの技術の一部であるHTMLとCSSの基礎を学びました。
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6">
+            2022/06~ JavaScript, TypeScript, React
+          </Typography>
+          <Stack direction={"row"} spacing={1}>
+            <Link
+              href={"https://oukayuka.booth.pm/items/2368045"}
+              target="_blank"
+            >
+              りあクト!(1)
+            </Link>
+            <Link
+              href={"https://oukayuka.booth.pm/items/2368019"}
+              target="_blank"
+            >
+              りあクト!(2)
+            </Link>
+          </Stack>
+          <Typography>
+            JavaScriptの基礎とTypeScriptの基礎を学びました。加えてReactの基礎や機能などを学びました。現在のフロントエンドは、ReactやNext.jsなどを使っているときいたため今回はReactを選択しました。
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6">2022/09~ SQL全般(PostgreSQL)</Typography>
           <Link href={"https://booth.pm/ja/items/1576397"} target="_blank">
             わかりみSQL
           </Link>
-        </Typography>
-        <Typography>
-          2022/10~ <StrongWords>Webの仕組みについて</StrongWords> -
+          <Typography>
+            仕事でアプリケーションを作成するときにアプリケーション全体の知識があった方が良いと考えたため、まずデータベースについて基礎的なことを学びました。
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6">2022/10~ Webの仕組みについて</Typography>
           <Link href={"https://amzn.asia/d/37McFoz"} target="_blank">
             WEB技術がこれ1冊でしっかりわかる教科書
           </Link>
-        </Typography>
-        <Typography>
-          2022/10~ <StrongWords>Ruby on Rail</StrongWords> -{" "}
+          <Typography>
+            Webの仕組みや用語について知らないことが多すぎたため、どうやってWebが成り立っているかなど基礎的なことを学びました。
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6">2022/10~ Ruby on Rail</Typography>
           <Link href={"https://railstutorial.jp/"} target="_blank">
             Railsチュートリアル
           </Link>
-        </Typography>
-        <Typography>
-          2023/01~ <StrongWords>TypeScript, React,etc..</StrongWords> -
+          <Typography>
+            簡単なWebアプリケーション作成を通してバックエンドの技術やフロントエンドとの関わりを知るためについて学びました。日本企業ではRuby
+            on
+            Railsでのアプリケーション開発も活発ときいたのでこのチュートリアルを選択しました。
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6">
+            2023/01~ TypeScript, React,etc...
+          </Typography>
           <Link href={"https://caita.today/"} target="_blank">
             自主開発(caita)
           </Link>
-        </Typography>
-        <Typography>
-          2023/04~ <StrongWords>JavaScript, アルゴリズム</StrongWords> -
+          <Typography>
+            学んだ知識を活かしてさらに実践的なものを作ろうと考えていたためこの開発に至りました。
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="h6">
+            2023/04~ JavaScript, アルゴリズム
+          </Typography>
           競プロ関連(Paiza)
-        </Typography>
+          <Typography>
+            技術力や実装力が足りないと感じたため、競プロを始めました。
+          </Typography>
+        </Stack>
       </Stack>
 
       <Stack spacing={1}>
