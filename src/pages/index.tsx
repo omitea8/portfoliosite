@@ -7,7 +7,7 @@ export default function Home() {
     <Stack spacing={3}>
       <Stack spacing={1}>
         <Typography variant="h4">About</Typography>
-        <Stack direction="row" spacing={1}>
+        <Stack direction="row" alignItems={"center"} spacing={1}>
           <Typography variant="h5">Mio Takahashi</Typography>
           <IconButton onClick={() => window.open("https://github.com/omitea8")}>
             <GitHubIcon />
