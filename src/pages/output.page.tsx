@@ -17,6 +17,7 @@ const OutPutPage: React.FC = () => {
           <Typography variant="h5">caita</Typography>
           <Button
             variant="outlined"
+            sx={{ textTransform: "none" }}
             startIcon={<PreviewIcon />}
             onClick={() => window.open("https://caita.today/")}
           >
@@ -24,6 +25,7 @@ const OutPutPage: React.FC = () => {
           </Button>
           <Button
             variant="outlined"
+            sx={{ textTransform: "none" }}
             startIcon={<GitHubIcon />}
             onClick={() =>
               window.open("https://github.com/omitea8/caita_frontend")
@@ -33,6 +35,7 @@ const OutPutPage: React.FC = () => {
           </Button>
           <Button
             variant="outlined"
+            sx={{ textTransform: "none" }}
             startIcon={<GitHubIcon />}
             onClick={() =>
               window.open("https://github.com/omitea8/caita_backend")
@@ -83,6 +86,7 @@ const OutPutPage: React.FC = () => {
           <Typography variant="h5">AI Portal</Typography>
           <Button
             variant="outlined"
+            sx={{ textTransform: "none" }}
             startIcon={<PreviewIcon />}
             onClick={() => window.open("https://ai-portal.tech/")}
           >
@@ -133,6 +137,7 @@ const OutPutPage: React.FC = () => {
 
           <Button
             variant="outlined"
+            sx={{ textTransform: "none" }}
             startIcon={<PreviewIcon />}
             onClick={() =>
               window.open("https://portfoliosite-cyan.vercel.app//")
@@ -142,6 +147,7 @@ const OutPutPage: React.FC = () => {
           </Button>
           <Button
             variant="outlined"
+            sx={{ textTransform: "none" }}
             startIcon={<GitHubIcon />}
             onClick={() =>
               window.open("https://github.com/omitea8/portfoliosite")
@@ -171,6 +177,7 @@ const OutPutPage: React.FC = () => {
           <Typography variant="h5">勉強記録のNotion</Typography>
           <Button
             variant="outlined"
+            sx={{ textTransform: "none" }}
             startIcon={<PreviewIcon />}
             onClick={() =>
               window.open(
