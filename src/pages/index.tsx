@@ -18,7 +18,7 @@ export default function Home() {
             <TwitterIcon />
           </IconButton>
         </Stack>
-        <Typography>1989年生まれ(現34歳)。愛媛県生まれ兵庫県在住。</Typography>
+        <Typography>1989年生まれ(現34歳)。愛媛県生まれ奈良県在住。</Typography>
         <Typography>
           昨年2022年からプログラミングの勉強を開始した初心者。家族の現役エンジニアに教えてもらいながら日々奮闘中です。
         </Typography>
