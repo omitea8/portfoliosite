@@ -1,20 +1,44 @@
-import { Button, Stack, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Button,
+  Stack,
+  Typography,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import PreviewIcon from "@mui/icons-material/Preview";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
+import { useState } from "react";
 
 const OutPutPage: React.FC = () => {
+  // アコーディオンの設定
+  const [expanded, setExpanded] = useState<string | false>(false);
+  const handleChange =
+    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
+
   return (
     <Stack spacing={6}>
       <Typography variant="h4">Output</Typography>
+      {/* caita */}
       <Stack spacing={2}>
+        <Typography variant="h5">caita</Typography>
+        <Image
+          src="/caita2.png"
+          alt="caita"
+          width={400}
+          height={200}
+          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+        />
         <Stack
           direction="row"
           alignItems={"center"}
           spacing={1}
           flexWrap={"wrap"}
         >
-          <Typography variant="h5">caita</Typography>
           <Button
             variant="outlined"
             sx={{ textTransform: "none" }}
@@ -44,46 +68,103 @@ const OutPutPage: React.FC = () => {
             backend
           </Button>
         </Stack>
-        <Typography variant="body2">
-          HTML/CSS, TypeScript, React, Ruby on Rails, AWS(S3), SQLite,
-          PostgresSQL, Vercel, Render, MUI, GitHub
-        </Typography>
-        <Stack direction="row" spacing={3} flexWrap={"wrap"}>
-          <Image
-            src="/caita1.png"
-            alt="caita"
-            width={400}
-            height={200}
-            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-          />
-
-          <Image
-            src="/caita2.png"
-            alt="caita"
-            width={400}
-            height={200}
-            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-          />
-        </Stack>
         <Stack spacing={1}>
-          <Typography>
-            現在開発中の画像の投稿サービスです。学んだことを活かして1つWebアプリケーションを作ろうと思い開発しています。
+          <Typography variant="body2">
+            HTML, CSS, TypeScript, React, Ruby on Rails, AWS(S3), SQLite,
+            PostgresSQL, Vercel, Render, MUI, GitHub
           </Typography>
-          <Typography>
-            既存の画像投稿サービスに自分の好みにぴったりとくるものがなく、作ればいいと言われ確かにその通りだと思い作り始めました。コンセプトは「簡単に投稿ができ且つ画像投稿者らしい閲覧ページを提供する」です。ワンクリックで投稿できることはもちろん、閲覧ページの色や背景などを簡単に変えられ、
-            ある程度好みにカスタマイズできるサービスを目指しています。
-          </Typography>
-          <Typography>
-            また、既存の画像投稿サービスは”いいね”や”シェア機能”があるものが多く、どうしても他者の反応が介入してしまいます。自分の作品に集中してもらうためにあくまで画像管理の場としてのみ機能するようこころがけています。
-          </Typography>
-          <Typography>
-            現在はアカウントの登録・画像の投稿/編集/削除など基本的な機能しかありませんが、今後は画像閲覧ページの色や背景をカスタマイズできる機能を作成していく予定です。
-          </Typography>
+          <Accordion
+            expanded={expanded === "caita_about"}
+            onChange={handleChange("caita_about")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>概要</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                画像の投稿・共有のWebアプリケーション。操作も見た目もシンプルに、自分の好みに合わせることができる画像投稿サービスを目指しています。
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "caita_function"}
+            onChange={handleChange("caita_function")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>機能</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                twitter連携(oauth2.0)、アカウントの登録、画像(キャプション)の投稿、投稿の編集、投稿削除、ログイン、ログアウト。
+              </Typography>
+              <Typography>
+                今後は画像閲覧ページの色や背景をカスタマイズできる機能を作成していく予定です。
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "caita_concept"}
+            onChange={handleChange("caita_concept")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>目的とコンセプト</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                既存の画像投稿サービスに自分の好みにぴったりとくるものがなかったため作成に至りました。
+                既存の画像投稿サービスは、見た目を好みに変えられないか、好みに変えるには複雑すぎるものが多く、簡単に自分の好みに合わせられるものがありません。
+                このアプリケーションでは、閲覧ページの色や背景、サムネイルサイズなどを簡単に変えられ画像投稿者らしい閲覧ページを作ることができるようになる予定です。
+              </Typography>
+              <Typography>
+                また、既存の画像投稿サービスはSNSとしての側面が強いものが多く、どうしても他者の反応が介入してしまいます。
+                自分の作品に集中してもらうためにあくまで画像管理の場としてのみ機能するよう心がけ、また他者への宣伝もできやすいサービスを目指しています。
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "caita_assignment"}
+            onChange={handleChange("caita_assignment")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>難しかった課題</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                ロジックのフローを考えるところが難しかったです。シーケンス図を書き、フロントエンドやバックエンド、データベースなどとどうつながるかを整理しながらひとつひとつ機能を作っていきました。悪意のある攻撃から守るための方法を勉強したり、外部のAPIについて調べたりと機能を作るだけでなくさまざまな調査が必要になることがわかりました。また、この調査がとても大変で、今でも非常にむずかしいと感じています。
+              </Typography>
+              <Typography></Typography>
+            </AccordionDetails>
+          </Accordion>
         </Stack>
       </Stack>
-      <Stack spacing={1}>
+
+      {/* AI Portal */}
+      <Stack spacing={2}>
+        <Typography variant="h5">AI Portal</Typography>
+        <Image
+          src="/ai1.png"
+          alt="ai portal"
+          width={400}
+          height={200}
+          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+        />
         <Stack direction="row" alignItems={"center"} spacing={1}>
-          <Typography variant="h5">AI Portal</Typography>
           <Button
             variant="outlined"
             sx={{ textTransform: "none" }}
@@ -97,44 +178,100 @@ const OutPutPage: React.FC = () => {
           HTML/CSS, TypeScript, React/Next.js, Node.js(非担当),
           PostgreSQL(非担当), OpenAI, Vercel, Render, MSW, MUI, GitHub
         </Typography>
-        <Stack direction="row" spacing={3} flexWrap={"wrap"}>
-          <Image
-            src="/ai1.png"
-            alt="ai portal"
-            width={400}
-            height={200}
-            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-          />
-          <Image
-            src="/ai2.png"
-            alt="ai portal"
-            width={400}
-            height={200}
-            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-          />
-        </Stack>
         <Stack spacing={1}>
-          <Typography>
-            家族と2人で開発中のWebアプリケーション。フロントエンドとスクラムマスターを担当。
-          </Typography>
-          <Typography>
-            もっと気軽にOpenAIに気軽に触ってほしいという気持ちから開発に至りました。OpenAIに触って独自のAIを作りたい人は簡単なプロンプトを入力しただけで自分だけのAIを作ることができ、ただ触って楽しみたい人はそこでできたAIを使って1往復の会話をすることができます。
-            詳しい技術がわからなくても気軽に触れるように「直感的でシンプルに」をコンセプトに作成しています。
-          </Typography>
-          <Typography>
-            開発は1日スプリントのスクラムでGW中(5日間)で開発しました。右の画像はスクラムマスターとしてスプリントレトロスペクティブをしたときの様子です。2人で開発することで、役割分担やコミュニケーションの大切さや、実践的なコードレビューなどを経験することができました。
-          </Typography>
+          <Accordion
+            expanded={expanded === "ai_about"}
+            onChange={handleChange("ai_about")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>概要</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                OpenAIを使って誰でも簡単にAIと会話ができるサービス。簡単な指定・設定を書くだけでAIと1往復の簡単な会話をすうことができます。また、作った設定は公開することができ幅広く作ったAIで遊ぶことができます。
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "ai_function"}
+            onChange={handleChange("ai_function")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>機能</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                twitter連携(oauth2.0)、アカウントの登録、AIの作成、AIの公開、AIの削除
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "ai_concept"}
+            onChange={handleChange("ai_concept")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>目的とコンセプト</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                家族と2人で作成したWebアプリケーション。フロントエンドとスクラムマスターを担当。
+              </Typography>
+              <Typography>
+                詳しい技術がわからなくても誰でも簡単にOpenAIに気軽に触れることをコンセプトに開発に至りました。OpenAIに触って独自のAIを作りたい人は簡単なプロンプトを入力しただけで自分だけのAIを作ることができ、ただ触って楽しみたい人はそこでできたAIを使って1往復の会話をすることができます。
+              </Typography>
+              <Typography>
+                OpenAIを使って何かアプリケーションを作ってみたかったこと、複数人で開発をしてみたかったこと、1日スプリントでスクラム開発をしてみたかったことなども開発のきっかけです。
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "ai_assignment"}
+            onChange={handleChange("ai_assignment")}
+            sx={{ boxShadow: "none" }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel-content"
+            >
+              <Typography>難しかった課題</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                開発は1日スプリントのスクラムでGW中(5日間)で開発しました。2人で開発することで、齟齬があったり方針が違ったりなど複数人で開発することの難しさがありました。開発中の困ったことやうまくいかなかっったことなどは毎日のスプリントレトロスペクティブやスプリントレビューで率直に話し合うことにし、すれ違いや摩擦を少なくするよう努めました。また、コードレビューやペアプログラミングを活用しお互いの意見を出し合ったり評価をしてもらうことで、お互いにとって良いコードを書けるよう努めました。複数人で開発することは一人で開発することとは違う問題がありましたが、ひとりひとりが気持ちよく開発できることを心がけ、開発中は楽しく開発ができることができました。
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </Stack>
       </Stack>
-      <Stack spacing={1}>
+
+      {/* portfolio Site */}
+      <Stack spacing={2}>
+        <Typography variant="h5">omi.t portfolio</Typography>
+        <Image
+          src="/portfolio1.png"
+          alt="PortfolioSite"
+          width={400}
+          height={200}
+          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+        />
         <Stack
           direction="row"
           alignItems={"center"}
           spacing={1}
           flexWrap={"wrap"}
         >
-          <Typography variant="h5">omi.t portfolio</Typography>
-
           <Button
             variant="outlined"
             sx={{ textTransform: "none" }}
@@ -159,22 +296,18 @@ const OutPutPage: React.FC = () => {
         <Typography variant="body2">
           HTML/CSS, TypeScript, React/Next.js, MUI, Vercel, GitHub
         </Typography>
-        <Stack direction="row" spacing={3} flexWrap={"wrap"}>
-          <Image
-            src="/portfolio1.png"
-            alt="PortfolioSite"
-            width={400}
-            height={200}
-            style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-          />
+        <Stack spacing={1}>
+          <Typography>
+            このWebページです。ポートフォリオ用に作成しました。
+          </Typography>
         </Stack>
-        <Typography>
-          このWebページです。ポートフォリオ用に作成しました。
-        </Typography>
       </Stack>
-      <Stack spacing={1}>
+
+      {/* Notion */}
+      <Stack spacing={2}>
+        {" "}
+        <Typography variant="h5">勉強記録のNotion</Typography>
         <Stack direction="row" alignItems={"center"} spacing={1}>
-          <Typography variant="h5">勉強記録のNotion</Typography>
           <Button
             variant="outlined"
             sx={{ textTransform: "none" }}
@@ -188,9 +321,11 @@ const OutPutPage: React.FC = () => {
             visit
           </Button>
         </Stack>
-        <Typography>
-          自分の記録のための日々の勉強や開発の記録のページです。学習した項目はSkillにて記載しています。
-        </Typography>
+        <Stack spacing={1}>
+          <Typography>
+            自分の記録のための日々の勉強や開発の記録のページです。学習した項目はSkillにて記載しています。
+          </Typography>
+        </Stack>
       </Stack>
     </Stack>
   );
