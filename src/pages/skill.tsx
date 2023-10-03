@@ -144,11 +144,11 @@ const SkillPage: React.FC = () => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel-content"
           >
-            <Typography>2022/10~ Ruby on Rail</Typography>
+            <Typography>2022/10~ Ruby on Rails</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              簡単なWebアプリケーション作成を通してバックエンドの技術やフロントエンドとの関わりを知るためについて学びました。日本企業ではRuby
+              簡単なWebアプリケーション作成を通してバックエンドの技術やフロントエンドとの関わりを知るために学びました。日本企業ではRuby
               on
               Railsでのアプリケーション開発も活発と知り、このチュートリアルを選択しました。
             </Typography>
@@ -170,7 +170,7 @@ const SkillPage: React.FC = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              認定スクラムマスターの資格保有者とスクラムガイドの読み合わせを通してスクラムについて学びました。開発手法としてアジャイル開発やスクラムが多く使われていると知り学んでおいた方が良いと感じたためこの読み合わせを開催してもらいました。また、自主開発においてもスクラム開発で行っています。
+              認定スクラムマスターの資格保有者とスクラムガイドの読み合わせを通してスクラムの基礎について学びました。開発手法としてアジャイル開発やスクラムが多く使われていると知り学んでおいた方が良いと感じたためこの読み合わせを開催してもらいました。また、自主開発においてもスクラム開発で行っています。
             </Typography>
             <Link
               href={
@@ -191,7 +191,9 @@ const SkillPage: React.FC = () => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel-content"
           >
-            <Typography>2023/01~ TypeScript, React,etc...</Typography>
+            <Typography>
+              2023/01~ 自主開発(画像投稿Webアプリケーション)
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
