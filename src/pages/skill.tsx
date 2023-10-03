@@ -236,7 +236,44 @@ const SkillPage: React.FC = () => {
           </li>
           <li>
             <Link href={"https://amzn.asia/d/idC4ZEk"} target="_blank">
-              アジャイルサムライ(途中)
+              アジャイルサムライ
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link
+              href={"https://oukayuka.booth.pm/items/2368045"}
+              target="_blank"
+            >
+              りあクト!(1)
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"https://oukayuka.booth.pm/items/2368019"}
+              target="_blank"
+            >
+              りあクト!(2)
+            </Link>
+          </li>
+          <li>
+            <Link href={"https://booth.pm/ja/items/1576397"} target="_blank">
+              わかりみSQL
+            </Link>
+          </li>
+          <li>
+            <Link href={"https://amzn.asia/d/37McFoz"} target="_blank">
+              WEB技術がこれ1冊でしっかりわかる教科書
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={
+                "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Japanese.pdf"
+              }
+              target="_blank"
+            >
+              スクラムガイド 2020
             </Link>
           </li>
         </ul>
