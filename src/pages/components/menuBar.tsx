@@ -32,7 +32,7 @@ export default function MenuBar() {
           <Button
             style={{ color: "black" }}
             onClick={() => {
-              router.push("/skill.page");
+              router.push("/skill");
             }}
           >
             Skill
@@ -40,7 +40,7 @@ export default function MenuBar() {
           <Button
             style={{ color: "black" }}
             onClick={() => {
-              router.push("/output.page");
+              router.push("/output");
             }}
           >
             Output
