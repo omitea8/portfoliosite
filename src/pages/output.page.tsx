@@ -84,106 +84,55 @@ const OutPutPage: React.FC = () => {
       />
 
       {/* AI Portal */}
-      <Stack spacing={2}>
-        <Typography variant="h5">AI Portal</Typography>
-        <Image
-          src="/ai1.png"
-          alt="ai portal"
-          width={400}
-          height={200}
-          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-        />
-        <Stack direction="row" alignItems={"center"} spacing={1}>
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<PreviewIcon />}
-            onClick={() => window.open("https://ai-portal.tech/")}
-          >
-            visit
-          </Button>
-        </Stack>
-        <Typography variant="body2">
-          HTML/CSS, TypeScript, React/Next.js, Node.js(非担当),
-          PostgreSQL(非担当), OpenAI, Vercel, Render, MSW, MUI, GitHub
-        </Typography>
-        <Stack spacing={1}>
-          <Accordion
-            expanded={expanded === "ai_about"}
-            onChange={handleChange("ai_about")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>概要</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                OpenAIを使って誰でも簡単にAIと会話ができるサービス。簡単な指定・設定を書くだけでAIと1往復の簡単な会話をすることができます。また、作った設定は公開することができ幅広く作ったAIで遊ぶことができます。
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "ai_function"}
-            onChange={handleChange("ai_function")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>機能</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Twitter(現X)連携(oauth2.0)、アカウントの登録、AIの作成、AIの公開、AIの削除
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "ai_concept"}
-            onChange={handleChange("ai_concept")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>目的とコンセプト</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                家族と2人で作成したWebアプリケーション。フロントエンドとスクラムマスターを担当。
-              </Typography>
-              <Typography>
-                詳しい技術がわからなくても誰でも簡単にOpenAIに気軽に触れることをコンセプトに開発に至りました。OpenAIに触って独自のAIを作りたい人は簡単なプロンプトを入力しただけで自分だけのAIを作ることができ、ただ触って楽しみたい人はそこでできたAIを使って1往復の会話をすることができます。
-              </Typography>
-              <Typography>
-                OpenAIを使って何かアプリケーションを作ってみたかったこと、複数人で開発をしてみたかったこと、1日スプリントでスクラム開発をしてみたかったことなども開発のきっかけです。
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "ai_assignment"}
-            onChange={handleChange("ai_assignment")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>難しかった課題</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                開発は1日スプリントのスクラムでGW中(5日間)で開発しました。2人で開発することで、齟齬があったり方針が違ったりなど複数人で開発することの難しさがありました。開発中の困ったことやうまくいかなかったことなどは毎日のスプリントレトロスペクティブやスプリントレビューで率直に話し合うことにし、すれ違いや摩擦を少なくするよう努めました。また、コードレビューやペアプログラミングを活用しお互いの意見を出し合ったり評価をしてもらうことで、お互いにとって良いコードを書けるよう努めました。複数人で開発することは一人で開発することとは違う問題がありましたが、ひとりひとりが気持ちよく開発できることを心がけ、開発中は楽しく開発ができました。
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        </Stack>
-      </Stack>
+      <OutputElement
+        name="AI Portal"
+        imageSource="/ai1.png"
+        url="https://ai-portal.tech/"
+        tech={[
+          "HTML/CSS",
+          "TypeScript",
+          " React/Next.js",
+          "Node.js(非担当)",
+          "PostgreSQL(非担当)",
+          "OpenAI",
+          "Vercel",
+          "Render",
+          "MSW",
+          " MUI",
+          "GitHub",
+        ]}
+        overview={
+          <Typography>
+            OpenAIを使って誰でも簡単にAIと会話ができるサービス。簡単な指定・設定を書くだけでAIと1往復の簡単な会話をすることができます。また、作った設定は公開することができ幅広く作ったAIで遊ぶことができます。
+          </Typography>
+        }
+        usage={
+          <Typography>
+            Twitter(現X)連携(oauth2.0)、アカウントの登録、AIの作成、AIの公開、AIの削除
+          </Typography>
+        }
+        concept={
+          <>
+            {" "}
+            <Typography>
+              家族と2人で作成したWebアプリケーション。フロントエンドとスクラムマスターを担当。
+            </Typography>
+            <Typography>
+              詳しい技術がわからなくても誰でも簡単にOpenAIに気軽に触れることをコンセプトに開発に至りました。OpenAIに触って独自のAIを作りたい人は簡単なプロンプトを入力しただけで自分だけのAIを作ることができ、ただ触って楽しみたい人はそこでできたAIを使って1往復の会話をすることができます。
+            </Typography>
+            <Typography>
+              OpenAIを使って何かアプリケーションを作ってみたかったこと、複数人で開発をしてみたかったこと、1日スプリントでスクラム開発をしてみたかったことなども開発のきっかけです。
+            </Typography>
+          </>
+        }
+        problems={
+          <>
+            <Typography>
+              開発は1日スプリントのスクラムでGW中(5日間)で開発しました。2人で開発することで、齟齬があったり方針が違ったりなど複数人で開発することの難しさがありました。開発中の困ったことやうまくいかなかったことなどは毎日のスプリントレトロスペクティブやスプリントレビューで率直に話し合うことにし、すれ違いや摩擦を少なくするよう努めました。また、コードレビューやペアプログラミングを活用しお互いの意見を出し合ったり評価をしてもらうことで、お互いにとって良いコードを書けるよう努めました。複数人で開発することは一人で開発することとは違う問題がありましたが、ひとりひとりが気持ちよく開発できることを心がけ、開発中は楽しく開発ができました。
+            </Typography>
+          </>
+        }
+      />
 
       {/* portfolio Site */}
       <Stack spacing={2}>
