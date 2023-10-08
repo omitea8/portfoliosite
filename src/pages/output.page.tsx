@@ -7,10 +7,13 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import PreviewIcon from "@mui/icons-material/Preview";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
+import { OutputElement } from "./components/OutputElement";
 
 const OutPutPage: React.FC = () => {
   // アコーディオンの設定
@@ -23,136 +26,62 @@ const OutPutPage: React.FC = () => {
   return (
     <Stack spacing={6}>
       <Typography variant="h4">Output</Typography>
+
       {/* caita */}
-      <Stack spacing={2}>
-        <Typography variant="h5">caita</Typography>
-        <Image
-          src="/caita2.png"
-          alt="caita"
-          width={400}
-          height={200}
-          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-        />
-        <Stack
-          direction="row"
-          alignItems={"center"}
-          spacing={1}
-          flexWrap={"wrap"}
-        >
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<PreviewIcon />}
-            onClick={() => window.open("https://caita.today/")}
-          >
-            visit
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<GitHubIcon />}
-            onClick={() =>
-              window.open("https://github.com/omitea8/caita_frontend")
-            }
-          >
-            frontend
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<GitHubIcon />}
-            onClick={() =>
-              window.open("https://github.com/omitea8/caita_backend")
-            }
-          >
-            backend
-          </Button>
-        </Stack>
-        <Stack spacing={1}>
-          <Typography variant="body2">
-            HTML, CSS, TypeScript, React, Ruby on Rails, AWS(S3), SQLite,
-            PostgresSQL, Vercel, Render, MUI, GitHub
+      <OutputElement
+        name="caita"
+        imageSource="/caita2.png"
+        url="https://caita.today/"
+        frontendRepositoryUrl="https://github.com/omitea8/caita_frontend"
+        backendRepositoryUrl="https://github.com/omitea8/caita_backend"
+        tech={[
+          "HTML",
+          "CSS",
+          "TypeScript",
+          "React",
+          "Ruby on Rails",
+          "AWS(S3)",
+          "SQLite",
+          "PostgreSQL",
+          "Vercel",
+          "Render",
+          "MUI",
+          "GitHub",
+        ]}
+        overview={
+          <Typography>
+            画像の投稿・共有のWebアプリケーション。操作も見た目もシンプルに、自分の好みに合わせることができる画像投稿サービスを目指しています。
           </Typography>
-          <Accordion
-            expanded={expanded === "caita_about"}
-            onChange={handleChange("caita_about")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>概要</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                画像の投稿・共有のWebアプリケーション。操作も見た目もシンプルに、自分の好みに合わせることができる画像投稿サービスを目指しています。
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "caita_function"}
-            onChange={handleChange("caita_function")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>機能</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Twitter(現X)連携(OAuth2.0)、アカウントの登録、画像とキャプションの投稿、投稿の編集、投稿削除、ログイン、ログアウト。
-              </Typography>
-              <Typography>
-                今後は画像閲覧ページの色や背景をカスタマイズできる機能を作成していく予定です。
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "caita_concept"}
-            onChange={handleChange("caita_concept")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>目的とコンセプト</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                既存の画像投稿サービスに自分の好みにぴったりとくるものがなかったため作成に至りました。
-                既存の画像投稿サービスは、見た目を好みに変えられないか、好みに変えるには複雑すぎるものが多く、簡単に自分の好みに合わせられるものがありません。
-                このアプリケーションでは、閲覧ページの色や背景、サムネイルサイズなどを簡単に変えられ画像投稿者らしい閲覧ページを作ることができるようになる予定です。
-              </Typography>
-              <Typography>
-                また、既存の画像投稿サービスはSNSとしての側面が強いものが多く、どうしても他者の反応が介入してしまいます。
-                自分の作品に集中してもらうためにあくまで画像管理の場としてのみ機能するよう心がけ、また他者への宣伝もしやすいサービスを目指しています。
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "caita_assignment"}
-            onChange={handleChange("caita_assignment")}
-            sx={{ boxShadow: "none" }}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel-content"
-            >
-              <Typography>難しかった課題</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                ロジックのフローを考えるところが難しかったです。シーケンス図を書き、フロントエンドやバックエンド、データベースなどとどうつながるかを整理しながらひとつひとつ機能を作っていきました。悪意のある攻撃から守るための方法を勉強したり、外部のAPIについて調べたりと機能を作るだけでなくさまざまな調査が必要になることがわかりました。また、この調査がとても大変で、今でも非常にむずかしいと感じています。
-              </Typography>
-              <Typography></Typography>
-            </AccordionDetails>
-          </Accordion>
-        </Stack>
-      </Stack>
+        }
+        usage={
+          <>
+            <Typography>
+              Twitter(現X)連携(OAuth2.0)、アカウントの登録、画像とキャプションの投稿、投稿の編集、投稿削除、ログイン、ログアウト。
+            </Typography>
+            <Typography>
+              今後は画像閲覧ページの色や背景をカスタマイズできる機能を作成していく予定です。
+            </Typography>
+          </>
+        }
+        concept={
+          <>
+            <Typography>
+              既存の画像投稿サービスに自分の好みにぴったりとくるものがなかったため作成に至りました。
+              既存の画像投稿サービスは、見た目を好みに変えられないか、好みに変えるには複雑すぎるものが多く、簡単に自分の好みに合わせられるものがありません。
+              このアプリケーションでは、閲覧ページの色や背景、サムネイルサイズなどを簡単に変えられ画像投稿者らしい閲覧ページを作ることができるようになる予定です。
+            </Typography>
+            <Typography>
+              また、既存の画像投稿サービスはSNSとしての側面が強いものが多く、どうしても他者の反応が介入してしまいます。
+              自分の作品に集中してもらうためにあくまで画像管理の場としてのみ機能するよう心がけ、また他者への宣伝もしやすいサービスを目指しています。
+            </Typography>
+          </>
+        }
+        problems={
+          <Typography>
+            ロジックのフローを考えるところが難しかったです。シーケンス図を書き、フロントエンドやバックエンド、データベースなどとどうつながるかを整理しながらひとつひとつ機能を作っていきました。悪意のある攻撃から守るための方法を勉強したり、外部のAPIについて調べたりと機能を作るだけでなくさまざまな調査が必要になることがわかりました。また、この調査がとても大変で、今でも非常にむずかしいと感じています。
+          </Typography>
+        }
+      />
 
       {/* AI Portal */}
       <Stack spacing={2}>
