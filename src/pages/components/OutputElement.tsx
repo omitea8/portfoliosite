@@ -7,10 +7,9 @@ import {
   AccordionDetails,
 } from "@mui/material";
 import Image from "next/image";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import PreviewIcon from "@mui/icons-material/Preview";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import React, { ReactNode, useState } from "react";
+import Link from "next/link";
+import { ExpandMore, GitHub, OpenInNew } from "@mui/icons-material";
 
 interface Props {
   name: string;
@@ -60,46 +59,39 @@ export const OutputElement: React.FC<Props> = ({
         spacing={1}
         flexWrap={"wrap"}
       >
-        <Button
-          variant="outlined"
-          sx={{ textTransform: "none" }}
-          startIcon={<PreviewIcon />}
-          onClick={() => window.open(url)}
-        >
-          visit
-        </Button>
+        <Link href={url} passHref>
+          <Stack direction="row" alignItems={"center"}>
+            <OpenInNew />
+            visit
+          </Stack>
+        </Link>
+
         {frontendRepositoryUrl && (
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<GitHubIcon />}
-            onClick={() => window.open(frontendRepositoryUrl)}
-          >
-            frontend
-          </Button>
+          <Link href={frontendRepositoryUrl} passHref>
+            <Stack direction="row" alignItems={"center"}>
+              <GitHub />
+              frontend
+            </Stack>
+          </Link>
         )}
         {backendRepositoryUrl && (
-          <Button
-            variant="outlined"
-            sx={{
-              textTransform: "none",
-            }}
-            startIcon={<GitHubIcon />}
-            onClick={() => window.open(backendRepositoryUrl)}
-          >
-            backend
-          </Button>
+          <Link href={backendRepositoryUrl} passHref>
+            <Stack direction="row" alignItems={"center"}>
+              <GitHub />
+              backend
+            </Stack>
+          </Link>
         )}
       </Stack>
       <Stack spacing={1}>
         <Typography variant="body2">{tech.join(", ")}</Typography>
         <Accordion
-          expanded={expanded === "caita_about"}
-          onChange={handleChange("caita_about")}
+          expanded={expanded === "overview"}
+          onChange={handleChange("overview")}
           sx={{ boxShadow: "none" }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMore />}
             aria-controls="panel-content"
           >
             <Typography>概要</Typography>
@@ -107,12 +99,12 @@ export const OutputElement: React.FC<Props> = ({
           <AccordionDetails>{overview}</AccordionDetails>
         </Accordion>
         <Accordion
-          expanded={expanded === "caita_function"}
-          onChange={handleChange("caita_function")}
+          expanded={expanded === "tech"}
+          onChange={handleChange("tech")}
           sx={{ boxShadow: "none" }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMore />}
             aria-controls="panel-content"
           >
             <Typography>機能</Typography>
@@ -120,12 +112,12 @@ export const OutputElement: React.FC<Props> = ({
           <AccordionDetails>{usage}</AccordionDetails>
         </Accordion>
         <Accordion
-          expanded={expanded === "caita_concept"}
-          onChange={handleChange("caita_concept")}
+          expanded={expanded === "concept"}
+          onChange={handleChange("concept")}
           sx={{ boxShadow: "none" }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMore />}
             aria-controls="panel-content"
           >
             <Typography>目的とコンセプト</Typography>
@@ -133,12 +125,12 @@ export const OutputElement: React.FC<Props> = ({
           <AccordionDetails>{concept}</AccordionDetails>
         </Accordion>
         <Accordion
-          expanded={expanded === "caita_assignment"}
-          onChange={handleChange("caita_assignment")}
+          expanded={expanded === "problems"}
+          onChange={handleChange("problems")}
           sx={{ boxShadow: "none" }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMore />}
             aria-controls="panel-content"
           >
             <Typography>難しかった課題</Typography>

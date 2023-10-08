@@ -6,13 +6,10 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import PreviewIcon from "@mui/icons-material/Preview";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
 import { useState } from "react";
-import Link from "next/link";
 import { OutputElement } from "./components/OutputElement";
 
 const OutPutPage: React.FC = () => {
