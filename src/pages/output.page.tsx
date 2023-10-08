@@ -132,76 +132,36 @@ const OutPutPage: React.FC = () => {
       />
 
       {/* portfolio Site */}
-      <Stack spacing={2}>
-        <Typography variant="h5">omi.t portfolio</Typography>
-        <Image
-          src="/portfolio1.png"
-          alt="PortfolioSite"
-          width={400}
-          height={200}
-          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-        />
-        <Stack
-          direction="row"
-          alignItems={"center"}
-          spacing={1}
-          flexWrap={"wrap"}
-        >
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<PreviewIcon />}
-            onClick={() =>
-              window.open("https://portfoliosite-cyan.vercel.app//")
-            }
-          >
-            visit
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<GitHubIcon />}
-            onClick={() =>
-              window.open("https://github.com/omitea8/portfoliosite")
-            }
-          >
-            GitHub
-          </Button>
-        </Stack>
-        <Typography variant="body2">
-          HTML/CSS, TypeScript, React/Next.js, MUI, Vercel, GitHub
-        </Typography>
-        <Stack spacing={1}>
+      <OutputElement
+        name="portfolio Site"
+        imageSource="/portfolio1.png"
+        url="https://portfoliosite-cyan.vercel.app/"
+        frontendRepositoryUrl="https://github.com/omitea8/portfoliosite"
+        tech={[
+          "HTML/CSS",
+          "TypeScript",
+          "React/Next.js",
+          "Vercel",
+          "MUI",
+          "GitHub",
+        ]}
+        overview={
           <Typography>
             このWebページです。ポートフォリオ用に作成しました。
           </Typography>
-        </Stack>
-      </Stack>
+        }
+      />
 
       {/* Notion */}
-      <Stack spacing={2}>
-        {" "}
-        <Typography variant="h5">勉強記録のNotion</Typography>
-        <Stack direction="row" alignItems={"center"} spacing={1}>
-          <Button
-            variant="outlined"
-            sx={{ textTransform: "none" }}
-            startIcon={<PreviewIcon />}
-            onClick={() =>
-              window.open(
-                "https://www.notion.so/programming-2c75a15d726944b7b1a386b35868c678?pvs=4"
-              )
-            }
-          >
-            visit
-          </Button>
-        </Stack>
-        <Stack spacing={1}>
+      <OutputElement
+        name="Notion"
+        url="https://www.notion.so/programming-2c75a15d726944b7b1a386b35868c678?pvs=4"
+        overview={
           <Typography>
             自分の記録のための日々の勉強や開発の記録のページです。学習した項目はSkillにて記載しています。
           </Typography>
-        </Stack>
-      </Stack>
+        }
+      />
     </Stack>
   );
 };
