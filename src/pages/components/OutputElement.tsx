@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import React, { ReactNode, use, useState } from "react";
 import Link from "next/link";
-import { ExpandMore, GitHub, OpenInNew } from "@mui/icons-material";
+import { ExpandMore, GitHub, OpenInNew, Yard } from "@mui/icons-material";
 
 interface Props {
   name: string;
@@ -45,61 +45,49 @@ export const OutputElement: React.FC<Props> = ({
 
   return (
     <Stack spacing={2}>
-      <Typography variant="h5">{name}</Typography>
-      {imageSource && (
-        <Image
-          src={imageSource}
-          alt={`${name}`}
-          width={400}
-          height={200}
-          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
-        />
-      )}
+      <Typography variant="h4">{name}</Typography>
+      {overview}
+      {tech && <Typography variant="body2">{tech.join(", ")}</Typography>}
       <Stack
         direction="row"
         alignItems={"center"}
-        spacing={1}
+        spacing={2}
         flexWrap={"wrap"}
       >
         <Link href={url} passHref>
-          <Stack direction="row" alignItems={"center"}>
+          <Stack direction="row" alignItems={"center"} spacing={0.5}>
             <OpenInNew />
-            visit
+            <Typography>visit</Typography>
           </Stack>
         </Link>
 
         {frontendRepositoryUrl && (
           <Link href={frontendRepositoryUrl} passHref>
-            <Stack direction="row" alignItems={"center"}>
+            <Stack direction="row" alignItems={"center"} spacing={0.5}>
               <GitHub />
-              frontend
+              <Typography>frontend</Typography>
             </Stack>
           </Link>
         )}
         {backendRepositoryUrl && (
           <Link href={backendRepositoryUrl} passHref>
-            <Stack direction="row" alignItems={"center"}>
+            <Stack direction="row" alignItems={"center"} spacing={0.5}>
               <GitHub />
-              backend
+              <Typography>backend</Typography>
             </Stack>
           </Link>
         )}
       </Stack>
+      {imageSource && (
+        <Image
+          src={imageSource}
+          alt={`${name}`}
+          width={800}
+          height={400}
+          style={{ boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)" }}
+        />
+      )}
       <Stack spacing={1}>
-        {tech && <Typography variant="body2">{tech.join(", ")}</Typography>}
-        <Accordion
-          expanded={expanded === "overview"}
-          onChange={handleChange("overview")}
-          sx={{ boxShadow: "none" }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMore />}
-            aria-controls="panel-content"
-          >
-            <Typography>概要</Typography>
-          </AccordionSummary>
-          <AccordionDetails>{overview}</AccordionDetails>
-        </Accordion>
         {usage && (
           <Accordion
             expanded={expanded === "tech"}
