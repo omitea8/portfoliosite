@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import MenuBar from "./components/menuBar";
+import MenuBar from "./components/MenuBar";
 import { Container, Stack } from "@mui/material";
 
 export default function App({ Component, pageProps }: AppProps) {
