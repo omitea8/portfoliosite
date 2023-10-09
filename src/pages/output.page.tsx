@@ -32,16 +32,15 @@ const OutPutPage: React.FC = () => {
             画像の投稿・共有のWebアプリケーション。操作も見た目もシンプルに、自分の好みに合わせることができる画像投稿サービスを目指しています。
           </Typography>
         }
-        usage={
-          <>
-            <Typography>
-              Twitter(現X)連携(OAuth2.0)、アカウントの登録、画像とキャプションの投稿、投稿の編集、投稿削除、ログイン、ログアウト。
-            </Typography>
-            <Typography>
-              今後は画像閲覧ページの色や背景をカスタマイズできる機能を作成していく予定です。
-            </Typography>
-          </>
-        }
+        usage={[
+          "画像とキャプションの投稿",
+          "投稿の編集",
+          "投稿削除",
+          "X(旧Twitter)連携(OAuth2.0)",
+          "アカウントの登録",
+          "ログイン",
+          "ログアウト",
+        ]}
         concept={
           <>
             <Typography>
@@ -85,11 +84,13 @@ const OutPutPage: React.FC = () => {
             OpenAIを使って誰でも簡単にAIと会話ができるサービス。簡単な指定・設定を書くだけでAIと1往復の簡単な会話をすることができます。また、作った設定は公開することができ幅広く作ったAIで遊ぶことができます。
           </Typography>
         }
-        usage={
-          <Typography>
-            Twitter(現X)連携(oauth2.0)、アカウントの登録、AIの作成、AIの公開、AIの削除
-          </Typography>
-        }
+        usage={[
+          "AIの作成",
+          "AIの削除",
+          "AIの公開/非公開設定",
+          "X(旧Twitter)連携(OAuth2.0)",
+          "アカウントの登録",
+        ]}
         concept={
           <>
             {" "}

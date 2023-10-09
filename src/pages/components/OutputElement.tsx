@@ -18,7 +18,7 @@ interface Props {
   backendRepositoryUrl?: string;
   tech?: string[];
   overview: ReactNode;
-  usage?: ReactNode;
+  usage?: string[];
   concept?: ReactNode;
   problems?: ReactNode;
 }
@@ -99,7 +99,7 @@ export const OutputElement: React.FC<Props> = ({
             >
               <Typography>機能</Typography>
             </AccordionSummary>
-            <AccordionDetails>{usage}</AccordionDetails>
+            <AccordionDetails>{usage.join(", ")}</AccordionDetails>
           </Accordion>
         )}
         {concept && (
