@@ -1,28 +1,10 @@
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Button,
-  Stack,
-  Typography,
-} from "@mui/material";
-import PreviewIcon from "@mui/icons-material/Preview";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import Image from "next/image";
-import { useState } from "react";
+import { Stack, Typography } from "@mui/material";
 import { OutputElement } from "./components/OutputElement";
 
 const OutPutPage: React.FC = () => {
-  // アコーディオンの設定
-  const [expanded, setExpanded] = useState<string | false>(false);
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
-
   return (
     <Stack spacing={6}>
-      <Typography variant="h4">Output</Typography>
+      <Typography variant="h3">Output</Typography>
 
       {/* caita */}
       <OutputElement

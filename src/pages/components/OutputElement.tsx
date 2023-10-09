@@ -1,15 +1,14 @@
 import {
   Stack,
   Typography,
-  Button,
   Accordion,
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
 import Image from "next/image";
-import React, { ReactNode, use, useState } from "react";
+import React, { ReactNode, useState } from "react";
 import Link from "next/link";
-import { ExpandMore, GitHub, OpenInNew, Yard } from "@mui/icons-material";
+import { ExpandMore, GitHub, OpenInNew } from "@mui/icons-material";
 
 interface Props {
   name: string;

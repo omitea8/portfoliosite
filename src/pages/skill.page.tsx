@@ -28,22 +28,30 @@ const SkillPage: React.FC = () => {
   return (
     <Stack spacing={3}>
       <Stack spacing={1}>
-        <Typography variant="h4">Skill</Typography>
-        <Typography variant="h5">Programming Language</Typography>
+        <Typography variant="h3">Skill</Typography>
+        <Typography variant="h6" fontWeight={"bold"}>
+          プログラミング言語
+        </Typography>
         <Typography>CSS, HTML5, JavaScript, TypeScript, Ruby</Typography>
-        <Typography variant="h5">Framework / Library</Typography>
+        <Typography variant="h6" fontWeight={"bold"}>
+          フレームワーク / ライブラリー
+        </Typography>
         <Typography>React, Next.js, Ruby on Rails, MUI</Typography>
-        <Typography variant="h5">Infrastructure / Hosting</Typography>
-        <Typography>GitHub, Git, AWS(S3), Vercel, Heroku, Render</Typography>
-        <Typography variant="h5">Other</Typography>
+        <Typography variant="h6" fontWeight={"bold"}>
+          インフラ
+        </Typography>
+        <Typography>AWS(S3), Vercel, Heroku, Render</Typography>
+        <Typography variant="h6" fontWeight={"bold"}>
+          その他
+        </Typography>
         <Typography>
-          PostgreSQL, Visual Studio Code, Photoshop, Illustrator, After Effects,
-          スクラム開発の基礎知識
+          GitHub, Git, PostgreSQL, Visual Studio Code, Photoshop, Illustrator,
+          After Effects, スクラム開発の基礎知識
         </Typography>
       </Stack>
 
       <Stack spacing={1}>
-        <Typography variant="h4">Study</Typography>
+        <Typography variant="h4">勉強内容</Typography>
         <Accordion
           expanded={expanded === "study1"}
           onChange={handleChange("study1")}
@@ -224,10 +232,7 @@ const SkillPage: React.FC = () => {
       </Stack>
 
       <Stack spacing={1}>
-        <Typography variant="h4">Books</Typography>
-        <Typography variant="body2">
-          Studyと重複するものは省いています。
-        </Typography>
+        <Typography variant="h5">読書リスト</Typography>
         <ul>
           <li>
             <Link href={"https://amzn.asia/d/9UkRVZK"} target="_blank">

@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <Stack spacing={3}>
       <Stack spacing={1}>
-        <Typography variant="h4">About</Typography>
+        <Typography variant="h3">About</Typography>
         <Stack direction="row" alignItems={"center"} spacing={1}>
-          <Typography variant="h5">Mio Takahashi</Typography>
+          <Typography variant="h4">高橋 美緒</Typography>
           <IconButton onClick={() => window.open("https://github.com/omitea8")}>
             <GitHubIcon />
           </IconButton>
@@ -27,7 +27,7 @@ export default function Home() {
         </Typography>
       </Stack>
       <Stack spacing={1}>
-        <Typography variant="h4">History</Typography>
+        <Typography variant="h4">経歴</Typography>
         <Typography>〜2008 私立済美高等学校 美術科(愛媛県)</Typography>
         <Typography>〜2010 日本電子専門学校 アニメーション科</Typography>
         <Typography>〜2013 飲食店アルバイト</Typography>
