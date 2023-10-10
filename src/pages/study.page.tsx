@@ -6,7 +6,7 @@ const studyPage = () => {
   return (
     <Stack spacing={3}>
       <Typography variant="h3">Study</Typography>
-      <Stack spacing={4}>
+      <Stack spacing={3}>
         {/* 【JavaScript&CSS】ガチで学びたい人のためのWEB開発徹底実践（フロントエンド編） */}
         <StudyElement
           url="https://www.notion.so/JavaScript-CSS-WEB-0e63a6dcb35c484895c30494ed0dcb85?pvs=4"

@@ -43,8 +43,13 @@ export const OutputElement: React.FC<Props> = ({
     };
 
   return (
-    <Stack spacing={2}>
-      <Typography variant="h4">{name}</Typography>
+    <Stack spacing={1}>
+      <Link href={url} target="_blank">
+        <Stack direction="row" alignItems={"center"} spacing={0.5}>
+          <Typography variant="h4">{name}</Typography>
+          <OpenInNew fontSize="large" />
+        </Stack>
+      </Link>
       {overview}
       {tech && <Typography variant="body2">{tech.join(", ")}</Typography>}
       <Stack
@@ -53,15 +58,8 @@ export const OutputElement: React.FC<Props> = ({
         spacing={2}
         flexWrap={"wrap"}
       >
-        <Link href={url} passHref>
-          <Stack direction="row" alignItems={"center"} spacing={0.5}>
-            <OpenInNew />
-            <Typography>visit</Typography>
-          </Stack>
-        </Link>
-
         {frontendRepositoryUrl && (
-          <Link href={frontendRepositoryUrl} passHref>
+          <Link href={frontendRepositoryUrl} target="_blank">
             <Stack direction="row" alignItems={"center"} spacing={0.5}>
               <GitHub />
               <Typography>frontend</Typography>
@@ -69,7 +67,7 @@ export const OutputElement: React.FC<Props> = ({
           </Link>
         )}
         {backendRepositoryUrl && (
-          <Link href={backendRepositoryUrl} passHref>
+          <Link href={backendRepositoryUrl} target="_blank">
             <Stack direction="row" alignItems={"center"} spacing={0.5}>
               <GitHub />
               <Typography>backend</Typography>

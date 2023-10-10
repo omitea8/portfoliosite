@@ -5,8 +5,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 export default function Home() {
   return (
     <Stack spacing={3}>
+      <Typography variant="h3">About</Typography>
       <Stack spacing={1}>
-        <Typography variant="h3">About</Typography>
         <Stack direction="row" alignItems={"center"} spacing={1}>
           <Typography variant="h4">高橋 美緒</Typography>
           <IconButton onClick={() => window.open("https://github.com/omitea8")}>

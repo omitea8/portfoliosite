@@ -11,8 +11,8 @@ const StrongWords: React.FC<{ children: string }> = ({ children }) => {
 const SkillPage: React.FC = () => {
   return (
     <Stack spacing={3}>
+      <Typography variant="h3">Skill</Typography>
       <Stack spacing={1}>
-        <Typography variant="h3">Skill</Typography>
         <Typography variant="h6" fontWeight={"bold"}>
           プログラミング言語
         </Typography>
