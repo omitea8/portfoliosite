@@ -1,9 +1,32 @@
 import * as React from "react";
-import { AppBar, Stack, Button, Typography } from "@mui/material";
-import router from "next/router";
+import { AppBar, Stack, Typography, Tabs, Tab } from "@mui/material";
+import { useRouter } from "next/router";
 import Image from "next/image";
 
 const MenuBar = () => {
+  const router = useRouter();
+  const [value, setValue] = React.useState<string>("home");
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    setValue(newValue);
+
+    switch (newValue) {
+      case "home":
+        router.push("/");
+        break;
+      case "skill":
+        router.push("/skill");
+        break;
+      case "study":
+        router.push("/study");
+        break;
+      case "output":
+        router.push("/output");
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <AppBar
       position="static"
@@ -13,47 +36,28 @@ const MenuBar = () => {
         boxShadow: "none",
       }}
     >
-      <Stack alignItems={"center"}>
+      <Stack alignItems={"center"} spacing={2}>
         <Stack direction="row" alignItems={"center"} spacing={2}>
           <Image src="/omitea.png" alt="omitea Logo" width={50} height={50} />
           <Typography variant="h6" color={"black"}>
             omi.t Portfolio
           </Typography>
         </Stack>
-        <Stack direction="row" spacing={2} alignItems={"center"}>
-          <Button
-            style={{ color: "black" }}
-            onClick={() => {
-              router.push("/");
-            }}
-          >
-            About
-          </Button>
-          <Button
-            style={{ color: "black" }}
-            onClick={() => {
-              router.push("/skill");
-            }}
-          >
-            Skill
-          </Button>
-          <Button
-            style={{ color: "black" }}
-            onClick={() => {
-              router.push("/study");
-            }}
-          >
-            Study
-          </Button>
-          <Button
-            style={{ color: "black" }}
-            onClick={() => {
-              router.push("/output");
-            }}
-          >
-            Output
-          </Button>
-        </Stack>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          sx={{
+            "& .MuiTab-root.Mui-selected": { color: "black" },
+            ".MuiTabs-indicator": {
+              backgroundColor: "black",
+            },
+          }}
+        >
+          <Tab label="About" value="home" />
+          <Tab label="Skill" value="skill" />
+          <Tab label="Study" value="study" />
+          <Tab label="Output" value="output" />
+        </Tabs>
       </Stack>
     </AppBar>
   );
