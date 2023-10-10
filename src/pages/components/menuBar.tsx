@@ -3,7 +3,7 @@ import { AppBar, Stack, Button, Typography } from "@mui/material";
 import router from "next/router";
 import Image from "next/image";
 
-export default function MenuBar() {
+const MenuBar = () => {
   return (
     <AppBar
       position="static"
@@ -40,6 +40,14 @@ export default function MenuBar() {
           <Button
             style={{ color: "black" }}
             onClick={() => {
+              router.push("/study");
+            }}
+          >
+            Study
+          </Button>
+          <Button
+            style={{ color: "black" }}
+            onClick={() => {
               router.push("/output");
             }}
           >
@@ -49,4 +57,6 @@ export default function MenuBar() {
       </Stack>
     </AppBar>
   );
-}
+};
+
+export default MenuBar;
