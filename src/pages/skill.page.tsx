@@ -1,37 +1,71 @@
 import { Typography, Stack } from "@mui/material";
-
-const StrongWords: React.FC<{ children: string }> = ({ children }) => {
-  return (
-    <Typography sx={{ fontWeight: "bold" }} component={"span"}>
-      {children}
-    </Typography>
-  );
-};
+import {
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+  SiTypescript,
+  SiRuby,
+  SiReact,
+  SiNextdotjs,
+  SiRubyonrails,
+  SiMui,
+  SiAmazonaws,
+  SiVercel,
+  SiHeroku,
+  SiRender,
+  SiGit,
+  SiGithub,
+  SiPostgresql,
+  SiVisualstudiocode,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobeaftereffects,
+} from "react-icons/si";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { SkillLevelSet } from "./components/SkillLevelSet";
 
 const SkillPage: React.FC = () => {
+  const languageSkill = [
+    { name: "CSS", level: 40, icon: <SiCss3 /> },
+    { name: "HTML5", level: 60, icon: <SiHtml5 /> },
+    { name: "JavaScript", level: 50, icon: <SiJavascript /> },
+    { name: "TypeScript", level: 80, icon: <SiTypescript /> },
+    { name: "Ruby", level: 30, icon: <SiRuby /> },
+  ];
+  const frameworksAndLibrarySkill = [
+    { name: "React", level: 50, icon: <SiReact /> },
+    { name: "Next.js", level: 50, icon: <SiNextdotjs /> },
+    { name: "Ruby on Rails", level: 30, icon: <SiRubyonrails /> },
+    { name: "MUI", level: 50, icon: <SiMui /> },
+  ];
+  const infrastructureSkill = [
+    { name: "AWS(S3)", level: 30, icon: <SiAmazonaws /> },
+    { name: "Vercel", level: 50, icon: <SiVercel /> },
+    { name: "Heroku", level: 30, icon: <SiHeroku /> },
+    { name: "Render", level: 50, icon: <SiRender /> },
+  ];
+  const otherSkill = [
+    { name: "Git", level: 50, icon: <SiGit /> },
+    { name: "GitHub", level: 50, icon: <SiGithub /> },
+    { name: "PostgreSQL", level: 30, icon: <SiPostgresql /> },
+    { name: "Visual Studio Code", level: 50, icon: <SiVisualstudiocode /> },
+    { name: "Photoshop", level: 50, icon: <SiAdobephotoshop /> },
+    { name: "Illustrator", level: 50, icon: <SiAdobeillustrator /> },
+    { name: "After Effects", level: 50, icon: <SiAdobeaftereffects /> },
+    { name: "スクラム開発の基礎知識", level: 100, icon: <FaPeopleGroup /> },
+  ];
+
   return (
     <Stack spacing={3}>
       <Typography variant="h3">Skill</Typography>
-      <Stack spacing={1}>
-        <Typography variant="h6" fontWeight={"bold"}>
-          プログラミング言語
-        </Typography>
-        <Typography>CSS, HTML5, JavaScript, TypeScript, Ruby</Typography>
-        <Typography variant="h6" fontWeight={"bold"}>
-          フレームワーク / ライブラリー
-        </Typography>
-        <Typography>React, Next.js, Ruby on Rails, MUI</Typography>
-        <Typography variant="h6" fontWeight={"bold"}>
-          インフラ
-        </Typography>
-        <Typography>AWS(S3), Vercel, Heroku, Render</Typography>
-        <Typography variant="h6" fontWeight={"bold"}>
-          その他
-        </Typography>
-        <Typography>
-          GitHub, Git, PostgreSQL, Visual Studio Code, Photoshop, Illustrator,
-          After Effects, スクラム開発の基礎知識
-        </Typography>
+      <Stack spacing={5}>
+        <SkillLevelSet category={"プログラミング言語"} skills={languageSkill} />
+        <SkillLevelSet
+          category={"フレームワーク / ライブラリー"}
+          skills={frameworksAndLibrarySkill}
+        />
+        <SkillLevelSet category={"インフラ"} skills={infrastructureSkill} />
+        <SkillLevelSet category={"その他"} skills={otherSkill} />
       </Stack>
     </Stack>
   );
