@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import { ReactNode } from "react";
-import { Done, OpenInNew } from "@mui/icons-material";
+import { Done, OpenInBrowser, OpenInNew } from "@mui/icons-material";
 import Link from "next/link";
 
 interface Props {
@@ -15,7 +15,10 @@ export const BooksElement: React.FC<Props> = ({ bookName, url, review }) => {
       <Stack direction={"row"} alignItems={"center"} spacing={1}>
         <Done />
         <Link href={url} target="_blank">
-          <Typography fontWeight={"bold"}>{bookName}</Typography>
+          <Stack direction={"row"} alignItems={"center"} spacing={1}>
+            <Typography fontWeight={"bold"}>{bookName}</Typography>
+            <OpenInNew fontSize="small" />
+          </Stack>
         </Link>
         {review}
       </Stack>
