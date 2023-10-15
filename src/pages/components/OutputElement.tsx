@@ -9,6 +9,7 @@ import Image from "next/image";
 import React, { ReactNode, useState } from "react";
 import Link from "next/link";
 import { ExpandMore, GitHub, OpenInNew } from "@mui/icons-material";
+import { Tech, TechChip } from "./TechChip";
 
 interface Props {
   name: string;
@@ -16,7 +17,7 @@ interface Props {
   url: string;
   frontendRepositoryUrl?: string;
   backendRepositoryUrl?: string;
-  tech?: string[];
+  tech: Tech[];
   overview: ReactNode;
   usage?: string[];
   concept?: ReactNode;
@@ -51,7 +52,12 @@ export const OutputElement: React.FC<Props> = ({
         </Stack>
       </Link>
       {overview}
-      {tech && <Typography variant="body2">{tech.join(", ")}</Typography>}
+      <Stack direction={"row"} spacing={0.5} flexWrap={"wrap"}>
+        {tech.map((tech) => (
+          <TechChip key={tech} tech={tech} />
+        ))}
+      </Stack>
+
       <Stack
         direction="row"
         alignItems={"center"}

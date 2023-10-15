@@ -67,16 +67,18 @@ const OutPutPage: React.FC = () => {
           imageSource="/ai1.png"
           url="https://ai-portal.tech/"
           tech={[
-            "HTML/CSS",
+            "HTML",
+            "CSS",
             "TypeScript",
-            " React/Next.js",
-            "Node.js(非担当)",
-            "PostgreSQL(非担当)",
+            "React",
+            "Next.js",
+            "Node.js",
+            "PostgreSQL",
             "OpenAI",
             "Vercel",
             "Render",
             "MSW",
-            " MUI",
+            "MUI",
             "GitHub",
           ]}
           overview={
@@ -121,9 +123,11 @@ const OutPutPage: React.FC = () => {
           url="https://omitea8.vercel.app/"
           frontendRepositoryUrl="https://github.com/omitea8/portfoliosite"
           tech={[
-            "HTML/CSS",
+            "HTML",
+            "CSS",
             "TypeScript",
-            "React/Next.js",
+            "React",
+            "Next.js",
             "Vercel",
             "MUI",
             "GitHub",
@@ -139,6 +143,7 @@ const OutPutPage: React.FC = () => {
         <OutputElement
           name="Notion"
           url="https://www.notion.so/programming-2c75a15d726944b7b1a386b35868c678?pvs=4"
+          tech={["Notion"]}
           overview={
             <Typography>
               自分の記録のための日々の勉強や開発の記録のページです。学習した項目はSkillにて記載しています。
