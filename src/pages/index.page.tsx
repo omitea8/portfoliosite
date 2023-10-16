@@ -10,7 +10,7 @@ export default function Home() {
       <Typography variant="h3">About</Typography>
       <Stack spacing={1}>
         <Stack direction="row" alignItems={"center"} spacing={1}>
-          <Typography variant="h4">高橋 美緒</Typography>
+          <Typography variant="h4">omi.t</Typography>
           <IconButton onClick={() => window.open("https://github.com/omitea8")}>
             <GitHubIcon />
           </IconButton>
@@ -20,7 +20,7 @@ export default function Home() {
             <TwitterIcon />
           </IconButton>
         </Stack>
-        <Typography>1989年生まれ(現34歳)。愛媛県生まれ奈良県在住。</Typography>
+        <Typography>愛媛県生まれ奈良県在住。</Typography>
         <Typography>
           2022年4月からプログラミングの勉強を開始した初心者。家族の現役エンジニアに教えてもらいながら日々奮闘中です。
         </Typography>
