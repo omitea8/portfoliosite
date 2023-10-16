@@ -51,13 +51,6 @@ export const OutputElement: React.FC<Props> = ({
           <OpenInNew fontSize="large" />
         </Stack>
       </Link>
-      {overview}
-      <Stack direction={"row"} spacing={0.5} flexWrap={"wrap"}>
-        {tech.map((tech) => (
-          <TechChip key={tech} tech={tech} />
-        ))}
-      </Stack>
-
       <Stack
         direction="row"
         alignItems={"center"}
@@ -81,6 +74,12 @@ export const OutputElement: React.FC<Props> = ({
           </Link>
         )}
       </Stack>
+      <Stack direction={"row"} spacing={0.5} flexWrap={"wrap"}>
+        {tech.map((tech) => (
+          <TechChip key={tech} tech={tech} />
+        ))}
+      </Stack>
+      {overview}
       {imageSource && (
         <Image
           src={imageSource}
