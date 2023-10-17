@@ -112,41 +112,58 @@ const studyPage = () => {
         />
       </Stack>
 
+      <Typography variant="h5">読書リスト</Typography>
       <Stack spacing={1}>
-        <Typography variant="h5">読書リスト</Typography>
-        <BooksElement
-          bookName="リータブルコード"
-          url="https://amzn.asia/d/9UkRVZK"
-          // review={<Typography>ああ</Typography>}
-        />
-        <BooksElement
-          bookName="アジャイルサムライ"
-          url="https://amzn.asia/d/idC4ZEk"
-          // review={<Typography>ああ</Typography>}
-        />
         <BooksElement
           bookName="りあクト!(1)"
           url="https://oukayuka.booth.pm/items/2368045"
+          progress={false}
           // review={<Typography>ああ</Typography>}
         />
         <BooksElement
           bookName="りあクト!(2)"
           url="https://oukayuka.booth.pm/items/2368019"
+          progress={false}
           // review={<Typography>ああ</Typography>}
         />
         <BooksElement
           bookName="わかりみSQL"
           url="https://booth.pm/ja/items/1576397"
+          progress={false}
           // review={<Typography>ああ</Typography>}
         />
         <BooksElement
           bookName="WEB技術がこれ1冊でしっかりわかる教科書"
           url="https://amzn.asia/d/37McFoz"
+          progress={false}
           // review={<Typography>ああ</Typography>}
         />
         <BooksElement
           bookName="スクラムガイド 2020"
           url="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Japanese.pdf"
+          progress={false}
+          // review={<Typography>ああ</Typography>}
+        />
+        <BooksElement
+          bookName="リータブルコード"
+          url="https://amzn.asia/d/9UkRVZK"
+          progress={false}
+          // review={<Typography>ああ</Typography>}
+        />
+        <BooksElement
+          bookName="アジャイルサムライ"
+          url="https://amzn.asia/d/idC4ZEk"
+          progress={false}
+          // review={
+          //   <Typography>
+          //     この本を読んでアジャイルのやり方の知識を得るのは簡単なことだが、継続的な改善やよりよいコードを書くという気持ちを忘れないことは難しいと感じた。すぐには身につかないと思うが、快適な開発のためにも、常に改善への努力を忘れないようにしたい。
+          //   </Typography>
+          // }
+        />
+        <BooksElement
+          bookName="フロントエンド開発のためのテスト入門 今からでも知っておきたい自動テスト戦略の必須知識"
+          url="https://amzn.asia/d/6DK0LpD"
+          progress={true}
           // review={<Typography>ああ</Typography>}
         />
       </Stack>
