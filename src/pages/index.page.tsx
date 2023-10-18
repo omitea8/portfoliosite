@@ -7,7 +7,7 @@ import { Timeline, timelineItemClasses } from "@mui/lab";
 export default function Home() {
   return (
     <Stack spacing={3}>
-      <Typography variant="h3">About</Typography>
+      <Typography variant="h3">about</Typography>
       <Stack spacing={1}>
         <Stack direction="row" alignItems={"center"} spacing={1}>
           <Typography variant="h4">omi.t</Typography>
@@ -22,10 +22,11 @@ export default function Home() {
         </Stack>
         <Typography>愛媛県生まれ奈良県在住。</Typography>
         <Typography>
-          2022年4月からプログラミングの勉強を開始した初心者。家族の現役エンジニアに教えてもらいながら日々奮闘中です。
+          2022年4月からプログラミングの勉強を開始しました。家族の現役エンジニアに教えてもらいながら日々奮闘中です。
         </Typography>
         <Typography>
-          コードどころか機械のことはわからないという感じの人生でしたので、まずは開発の全体の流れを把握できるよう勉強してきました。今後はフロントエンドに集中し、よりよいUI/UXを作れるようになるため専門的な知識を身につけていきたいと思っています。
+          もともと”ものを作る”ことが好きでした。プログラミングをはじめたきっかけは、作りたいものができたからです。自分の書いたものが動くことにプログラミングの楽しさを感じています。
+          現在はアプリケーションの開発の全体を把握できるよう手広く学んできました。今後はフロントエンドの技術に週中し、より専門的な知識を身につけていきたいと考えています。
         </Typography>
       </Stack>
       <Stack spacing={1}>
