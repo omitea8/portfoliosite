@@ -31,7 +31,7 @@ export const TimeLineElement: React.FC<Props> = ({
         </TimelineSeparator>
         <TimelineContent>
           <Stack direction={"row"} spacing={2}>
-            <Typography>{day}</Typography>
+            <Typography>〜{day}</Typography>
             <Stack>
               <Typography>{title}</Typography>
               <Typography variant="body2" color={"gray"}>
