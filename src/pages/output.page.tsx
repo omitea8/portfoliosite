@@ -128,6 +128,8 @@ const OutPutPage: React.FC = () => {
             "TypeScript",
             "React",
             "Next.js",
+            "MUI",
+            "react-icons",
             "Vercel",
             "MUI",
             "GitHub",

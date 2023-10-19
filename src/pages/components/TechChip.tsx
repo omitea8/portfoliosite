@@ -38,6 +38,7 @@ export type Tech =
   | "Next.js"
   | "Ruby on Rails"
   | "MUI"
+  | "react-icons"
   | "AWS(S3)"
   | "Vercel"
   | "Heroku"
@@ -71,6 +72,7 @@ export const TechChip: React.FC<Props> = ({ tech }) => {
     else if (tech === "Next.js") return <SiNextdotjs />;
     else if (tech === "Ruby on Rails") return <SiRubyonrails />;
     else if (tech === "MUI") return <SiMui />;
+    else if (tech === "react-icons") return <SiReact />;
     else if (tech === "AWS(S3)") return <SiAmazonaws />;
     else if (tech === "Vercel") return <SiVercel />;
     else if (tech === "Heroku") return <SiHeroku />;
