@@ -6,7 +6,7 @@ import { Timeline, timelineOppositeContentClasses } from "@mui/lab";
 const studyPage = () => {
   return (
     <Stack spacing={3}>
-      <Typography variant="h3">study</Typography>
+      <Typography variant="h3">Study</Typography>
       <Stack spacing={3}>
         <Timeline
           sx={{

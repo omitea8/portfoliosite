@@ -6,7 +6,7 @@ import { HistoryElement } from "./components/HistoryElement";
 export default function Home() {
   return (
     <Stack spacing={3}>
-      <Typography variant="h3">about</Typography>
+      <Typography variant="h3">About</Typography>
       <Stack spacing={1}>
         <Stack direction="row" alignItems={"center"} spacing={1}>
           <Typography variant="h4">omi.t</Typography>
