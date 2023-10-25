@@ -2,11 +2,12 @@ import { IconButton, Stack, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { HistoryElement } from "./components/HistoryElement";
+import { Logo } from "./components/Logo";
 
 export default function Home() {
   return (
     <Stack spacing={3}>
-      <Typography variant="h3">About</Typography>
+      <Logo size="h3" name="About" />
       <Stack spacing={1}>
         <Stack direction="row" alignItems={"center"} spacing={1}>
           <Typography variant="h4">omi.t</Typography>

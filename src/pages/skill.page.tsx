@@ -25,6 +25,7 @@ import {
 } from "react-icons/si";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { SkillLevelSet } from "./components/SkillLevelSet";
+import { Logo } from "./components/Logo";
 
 const SkillPage: React.FC = () => {
   const languageSkill = [
@@ -65,7 +66,7 @@ const SkillPage: React.FC = () => {
 
   return (
     <Stack spacing={3}>
-      <Typography variant="h3">Skill</Typography>
+      <Logo size="h3" name="Skill" />
       <Typography variant="subtitle2">
         問題やわからないことは検索などをして解決し、一人で作業を任されても問題のないと思われるレベルを100%としています。
       </Typography>

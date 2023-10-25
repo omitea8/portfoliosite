@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Rajdhani:wght@300&family=Sacramento&family=Stalemate&display=swap");
+
+code {
+  font-family: "Cutive Mono";
+}
+
 a {
   color: gray;
   text-decoration: none;

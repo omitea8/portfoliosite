@@ -1,7 +1,8 @@
 import * as React from "react";
-import { AppBar, Stack, Typography, Tabs, Tab } from "@mui/material";
+import { AppBar, Stack, Tabs, Tab } from "@mui/material";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { Logo } from "./Logo";
 
 const MenuBar = () => {
   const router = useRouter();
@@ -34,14 +35,13 @@ const MenuBar = () => {
         backgroundColor: "rgba(255, 255, 255, 0.5)",
         flexGrow: 1,
         boxShadow: "none",
+        color: "black",
       }}
     >
-      <Stack alignItems={"center"} spacing={2}>
+      <Stack alignItems={"center"}>
         <Stack direction="row" alignItems={"center"} spacing={2}>
           <Image src="/omitea.png" alt="omitea Logo" width={50} height={50} />
-          <Typography variant="h6" color={"black"}>
-            omi.t Portfolio
-          </Typography>
+          <Logo size="h5" name="omi.t Portfolio" />
         </Stack>
         <Tabs
           value={value}

@@ -2,11 +2,12 @@ import { Stack, Typography } from "@mui/material";
 import { StudyElement } from "./components/StudyElement";
 import { BooksElement } from "./components/BookElement";
 import { Timeline, timelineOppositeContentClasses } from "@mui/lab";
+import { Logo } from "./components/Logo";
 
 const studyPage = () => {
   return (
     <Stack spacing={3}>
-      <Typography variant="h3">Study</Typography>
+      <Logo size="h3" name="Study" />
       <Stack spacing={3}>
         <Timeline
           sx={{
@@ -106,7 +107,7 @@ const studyPage = () => {
             day="2023/10-"
             line={true}
             title="フロントエンド開発のテストについて学ぶ"
-            description="テストの重要性は理解しているつもりですが、フロントエンドのテストについての手法や使い分けなどについて学びたいと思い学習を始めました。"
+            description="フロントエンドのテストについての手法や使い分けなど具体的なことについて知識不足を感じたため学習を始めました。"
           />
         </Timeline>
       </Stack>
