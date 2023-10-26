@@ -1,4 +1,4 @@
-import { Divider, Stack, Typography } from "@mui/material";
+import { Box, Divider, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import React, { ReactNode } from "react";
 import Link from "next/link";
@@ -81,35 +81,38 @@ export const OutputElement: React.FC<Props> = ({
           />
         )}
         {usage && (
-          <Stack spacing={1}>
-            <Divider textAlign="left">
-              <Typography variant="subtitle2" fontWeight={"bold"}>
-                機能
-              </Typography>
-            </Divider>
-            <Typography>{usage.join(", ")}</Typography>
+          <Stack>
+            <Typography variant="subtitle2" fontWeight={"bold"}>
+              機能
+            </Typography>
+            <Stack spacing={1}>
+              <Divider />
+              <Typography>{usage.join(", ")}</Typography>
+            </Stack>
           </Stack>
         )}
         <Stack spacing={1}>
           {concept && (
-            <Stack spacing={1}>
-              <Divider textAlign="left">
-                <Typography variant="subtitle2" fontWeight={"bold"}>
-                  目的とコンセプト
-                </Typography>
-              </Divider>
-              {concept}
+            <Stack>
+              <Typography variant="subtitle2" fontWeight={"bold"}>
+                目的とコンセプト
+              </Typography>
+              <Stack spacing={1}>
+                <Divider />
+                {concept}
+              </Stack>
             </Stack>
           )}
         </Stack>
         {problems && (
-          <Stack spacing={1}>
-            <Divider textAlign="left">
-              <Typography variant="subtitle2" fontWeight={"bold"}>
-                難しかった課題
-              </Typography>
-            </Divider>
-            {problems}
+          <Stack>
+            <Typography variant="subtitle2" fontWeight={"bold"}>
+              難しかった課題
+            </Typography>
+            <Stack spacing={1}>
+              <Divider />
+              {problems}
+            </Stack>
           </Stack>
         )}
       </Stack>
