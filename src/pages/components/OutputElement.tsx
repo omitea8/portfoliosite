@@ -71,7 +71,6 @@ export const OutputElement: React.FC<Props> = ({
         ))}
       </Stack>
       <Stack spacing={3}>
-        {" "}
         {imageSource && (
           <Image
             src={imageSource}
@@ -83,7 +82,6 @@ export const OutputElement: React.FC<Props> = ({
         )}
         {usage && (
           <Stack spacing={1}>
-            {" "}
             <Divider textAlign="left">
               <Typography variant="subtitle2" fontWeight={"bold"}>
                 機能
@@ -106,7 +104,6 @@ export const OutputElement: React.FC<Props> = ({
         </Stack>
         {problems && (
           <Stack spacing={1}>
-            {" "}
             <Divider textAlign="left">
               <Typography variant="subtitle2" fontWeight={"bold"}>
                 難しかった課題
