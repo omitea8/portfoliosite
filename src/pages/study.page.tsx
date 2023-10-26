@@ -34,7 +34,7 @@ const studyPage = () => {
             line={true}
             title="書籍りあクト!でJavaScript,TypeScript,Reactの基礎を学ぶ"
             description="
-              2022年のフロントエンドはReactやNext.jsなどが多く使われていると知り汎用性を考え、今回はReactを選択しました。また、JavaScriptの基礎は他の言語でも応用できると思い、ひとまずはReactで使う技術のみに集中しました。"
+              近年のフロントエンドはReactやNext.jsなどが多く使われていると知り汎用性を考え、今回はReactを選択しました。また、JavaScriptの基礎は他の言語でも応用できると思い、ひとまずはReactで使う技術のみに集中しました。"
             reference="https://oukayuka.booth.pm/"
             referenceTitle="くるみ割り書房 ft.React"
           />
