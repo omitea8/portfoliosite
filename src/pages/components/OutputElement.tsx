@@ -77,6 +77,7 @@ export const OutputElement: React.FC<Props> = ({
             alt={`${name}`}
             width={800}
             height={400}
+            layout="responsive"
             style={{ border: "1px solid lightGray" }}
           />
         )}
