@@ -7,6 +7,27 @@ import { Logo } from "./Logo";
 const MenuBar = () => {
   const router = useRouter();
   const [value, setValue] = React.useState<string>("home");
+
+  React.useEffect(() => {
+    switch (router.pathname) {
+      case "/":
+        setValue("home");
+        break;
+      case "/skill":
+        setValue("skill");
+        break;
+      case "/study":
+        setValue("study");
+        break;
+      case "/output":
+        setValue("output");
+        break;
+      default:
+        setValue("home");
+        break;
+    }
+  }, [router.pathname]);
+
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
 
