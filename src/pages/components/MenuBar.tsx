@@ -6,12 +6,12 @@ import { Logo } from "./Logo";
 
 const MenuBar = () => {
   const router = useRouter();
-  const [value, setValue] = React.useState<string>("home");
+  const [value, setValue] = React.useState<string>("output");
 
   React.useEffect(() => {
     switch (router.pathname) {
-      case "/":
-        setValue("home");
+      case "/output":
+        setValue("output");
         break;
       case "/skill":
         setValue("skill");
@@ -19,11 +19,11 @@ const MenuBar = () => {
       case "/study":
         setValue("study");
         break;
-      case "/output":
-        setValue("output");
+      case "/about":
+        setValue("about");
         break;
       default:
-        setValue("home");
+        setValue("output");
         break;
     }
   }, [router.pathname]);
@@ -32,8 +32,8 @@ const MenuBar = () => {
     setValue(newValue);
 
     switch (newValue) {
-      case "home":
-        router.push("/");
+      case "output":
+        router.push("/output");
         break;
       case "skill":
         router.push("/skill");
@@ -41,8 +41,8 @@ const MenuBar = () => {
       case "study":
         router.push("/study");
         break;
-      case "output":
-        router.push("/output");
+      case "about":
+        router.push("/about");
         break;
       default:
         break;
@@ -74,10 +74,10 @@ const MenuBar = () => {
             },
           }}
         >
-          <Tab label="About" value="home" />
+          <Tab label="Output" value="output" />
           <Tab label="Skill" value="skill" />
           <Tab label="Study" value="study" />
-          <Tab label="Output" value="output" />
+          <Tab label="About" value="about" />
         </Tabs>
       </Stack>
     </AppBar>
