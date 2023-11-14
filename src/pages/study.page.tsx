@@ -139,6 +139,14 @@ const studyPage = () => {
           // }
         />
         <BooksElement
+          bookName="JavaScript Promiseの本"
+          url="https://azu.github.io/promises-book/"
+          progress={false}
+          // review={
+          //   <Typography>ああ</Typography>
+          // }
+        />
+        <BooksElement
           bookName="フロントエンド開発のためのテスト入門 今からでも知っておきたい自動テスト戦略の必須知識"
           url="https://amzn.asia/d/6DK0LpD"
           progress={true}
