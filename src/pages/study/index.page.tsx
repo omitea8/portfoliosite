@@ -1,8 +1,8 @@
 import { Stack, Typography } from "@mui/material";
-import { StudyElement } from "./components/StudyElement";
-import { BooksElement } from "./components/BookElement";
+import { StudyElement } from "../components/StudyElement";
+import { BooksElement } from "../components/BookElement";
 import { Timeline, timelineItemClasses } from "@mui/lab";
-import { Logo } from "./components/Logo";
+import { Logo } from "../components/Logo";
 
 const studyPage = () => {
   return (

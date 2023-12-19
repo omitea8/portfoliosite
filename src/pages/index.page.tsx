@@ -1,4 +1,4 @@
-import OutPutPage from "./output.page";
+import OutPutPage from "./output/index.page";
 
 export default function Home() {
   return (
