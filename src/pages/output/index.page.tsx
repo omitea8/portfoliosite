@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material";
-import { OutputElement } from "../components/OutputElement";
-import { Logo } from "../components/Logo";
+import { OutputElement } from "./OutputElement";
+import { Logo } from "../../components/Logo";
 
 const OutPutPage: React.FC = () => {
   return (

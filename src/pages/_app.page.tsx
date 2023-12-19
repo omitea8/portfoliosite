@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import MenuBar from "./components/MenuBar";
+import MenuBar from "../components/MenuBar";
 import { Container, Stack } from "@mui/material";
 import "../styles/globals.css";
 
