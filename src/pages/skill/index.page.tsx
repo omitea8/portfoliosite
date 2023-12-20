@@ -24,8 +24,8 @@ import {
   SiMiro,
 } from "react-icons/si";
 import { FaPeopleGroup } from "react-icons/fa6";
-import { SkillLevelSet } from "./components/SkillLevelSet";
-import { Logo } from "./components/Logo";
+import { SkillLevelSet } from "./SkillLevelSet";
+import { Logo } from "../../components/Logo";
 
 const SkillPage: React.FC = () => {
   const languageSkill = [
