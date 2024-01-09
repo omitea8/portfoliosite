@@ -149,6 +149,12 @@ const studyPage = () => {
         <BooksElement
           bookName="フロントエンド開発のためのテスト入門 今からでも知っておきたい自動テスト戦略の必須知識"
           url="https://amzn.asia/d/6DK0LpD"
+          progress={false}
+          // review={<Typography>ああ</Typography>}
+        />
+        <BooksElement
+          bookName="テスト駆動開発）"
+          url="https://amzn.asia/d/iZoWN64"
           progress={true}
           // review={<Typography>ああ</Typography>}
         />
