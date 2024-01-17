@@ -2,6 +2,7 @@ import { Typography, Stack } from "@mui/material";
 import {
   SiCss3,
   SiHtml5,
+  SiJavascript,
   SiTypescript,
   SiRuby,
   SiReact,
@@ -28,10 +29,11 @@ import { Logo } from "../../components/Logo";
 
 const SkillPage: React.FC = () => {
   const languageSkill = [
-    { name: "TypeScript(JavaScript)", level: 80, icon: <SiTypescript /> },
-    { name: "Ruby", level: 50, icon: <SiRuby /> },
     { name: "CSS", level: 50, icon: <SiCss3 /> },
     { name: "HTML5", level: 70, icon: <SiHtml5 /> },
+    { name: "JavaScript", level: 80, icon: <SiJavascript /> },
+    { name: "TypeScript", level: 80, icon: <SiTypescript /> },
+    { name: "Ruby", level: 50, icon: <SiRuby /> },
   ];
   const frameworksAndLibrarySkill = [
     { name: "React", level: 80, icon: <SiReact /> },
@@ -48,11 +50,6 @@ const SkillPage: React.FC = () => {
   const otherSkill = [
     { name: "Git", level: 80, icon: <SiGit /> },
     { name: "GitHub", level: 80, icon: <SiGithub /> },
-    {
-      name: "アジャイル・スクラム開発の基礎知識",
-      level: 80,
-      icon: <FaPeopleGroup />,
-    },
     { name: "PostgreSQL", level: 70, icon: <SiPostgresql /> },
     { name: "Visual Studio Code", level: 70, icon: <SiVisualstudiocode /> },
     { name: "Photoshop", level: 100, icon: <SiAdobephotoshop /> },
@@ -60,6 +57,11 @@ const SkillPage: React.FC = () => {
     { name: "After Effects", level: 50, icon: <SiAdobeaftereffects /> },
     { name: "Figma", level: 40, icon: <SiFigma /> },
     { name: "Miro", level: 90, icon: <SiMiro /> },
+    {
+      name: "アジャイル・スクラム開発の知識",
+      level: 80,
+      icon: <FaPeopleGroup />,
+    },
   ];
 
   return (
