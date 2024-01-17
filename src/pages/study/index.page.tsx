@@ -159,6 +159,45 @@ const studyPage = () => {
           // review={<Typography>ああ</Typography>}
         />
       </Stack>
+
+      <Typography variant="h5">参加勉強会</Typography>
+      <Stack spacing={1}>
+        <ListElement
+          name="Web TECH FORUM 2023 Autumn"
+          url="https://grapecity-dev-tools.connpass.com/event/295451/"
+          progress={false}
+        />
+        <ListElement
+          name="★再増枠★Frontend Night 〜Webフロントエンドテスト編〜"
+          url="https://yojo.connpass.com/event/295783/"
+          progress={false}
+        />
+        <ListElement
+          name="LT&ディスカッション5ラウンド!うひょさん・よしこさんと改めて考えるReactコンポーネント設計"
+          url="https://offers.connpass.com/event/298939/"
+          progress={false}
+        />
+        <ListElement
+          name="takepepeさんと振り返る フロントエンドの書くべきだったテスト、書かなくてよかったテスト"
+          url="https://offers.connpass.com/event/299909/"
+          progress={false}
+        />
+        <ListElement
+          name="Zenn,しずかなインターネット「どうやって開発したの？」開発者catnoseさんにきいてみた"
+          url="https://findy.connpass.com/event/306774/"
+          progress={true}
+        />
+        <ListElement
+          name="フロントエンドの技術選定 ~2023を振り返る~ Lunch LT"
+          url="https://findy.connpass.com/event/306714/"
+          progress={true}
+        />
+        <ListElement
+          name="プロダクトマネジメントのすべて著者 及川さんに聞く 技術から価値を生み出すエンジニアになるには"
+          url="https://offers.connpass.com/event/307595/"
+          progress={true}
+        />
+      </Stack>
     </Stack>
   );
 };
