@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import { StudyElement } from "./StudyElement";
-import { BooksElement } from "./BookElement";
+import { ListElement } from "./ListElement";
 import { Timeline, timelineItemClasses } from "@mui/lab";
 import { Logo } from "../../components/Logo";
 
@@ -92,44 +92,44 @@ const studyPage = () => {
 
       <Typography variant="h5">読書リスト</Typography>
       <Stack spacing={1}>
-        <BooksElement
-          bookName="りあクト!(1)"
+        <ListElement
+          name="りあクト!(1)"
           url="https://oukayuka.booth.pm/items/2368045"
           progress={false}
           // review={<Typography>ああ</Typography>}
         />
-        <BooksElement
-          bookName="りあクト!(2)"
+        <ListElement
+          name="りあクト!(2)"
           url="https://oukayuka.booth.pm/items/2368019"
           progress={false}
           // review={<Typography>ああ</Typography>}
         />
-        <BooksElement
-          bookName="わかりみSQL"
+        <ListElement
+          name="わかりみSQL"
           url="https://booth.pm/ja/items/1576397"
           progress={false}
           // review={<Typography>ああ</Typography>}
         />
-        <BooksElement
-          bookName="WEB技術がこれ1冊でしっかりわかる教科書"
+        <ListElement
+          name="WEB技術がこれ1冊でしっかりわかる教科書"
           url="https://amzn.asia/d/37McFoz"
           progress={false}
           // review={<Typography>ああ</Typography>}
         />
-        <BooksElement
-          bookName="スクラムガイド 2020"
+        <ListElement
+          name="スクラムガイド 2020"
           url="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Japanese.pdf"
           progress={false}
           // review={<Typography>ああ</Typography>}
         />
-        <BooksElement
-          bookName="リータブルコード"
+        <ListElement
+          name="リータブルコード"
           url="https://amzn.asia/d/9UkRVZK"
           progress={false}
           // review={<Typography>ああ</Typography>}
         />
-        <BooksElement
-          bookName="アジャイルサムライ"
+        <ListElement
+          name="アジャイルサムライ"
           url="https://amzn.asia/d/idC4ZEk"
           progress={false}
           // review={
@@ -138,22 +138,22 @@ const studyPage = () => {
           //   </Typography>
           // }
         />
-        <BooksElement
-          bookName="JavaScript Promiseの本"
+        <ListElement
+          name="JavaScript Promiseの本"
           url="https://azu.github.io/promises-book/"
           progress={false}
           // review={
           //   <Typography>ああ</Typography>
           // }
         />
-        <BooksElement
-          bookName="フロントエンド開発のためのテスト入門 今からでも知っておきたい自動テスト戦略の必須知識"
+        <ListElement
+          name="フロントエンド開発のためのテスト入門 今からでも知っておきたい自動テスト戦略の必須知識"
           url="https://amzn.asia/d/6DK0LpD"
           progress={false}
           // review={<Typography>ああ</Typography>}
         />
-        <BooksElement
-          bookName="テスト駆動開発）"
+        <ListElement
+          name="テスト駆動開発）"
           url="https://amzn.asia/d/iZoWN64"
           progress={true}
           // review={<Typography>ああ</Typography>}

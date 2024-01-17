@@ -8,14 +8,14 @@ import {
 import Link from "next/link";
 
 interface Props {
-  bookName: string;
+  name: string;
   url: string;
   review?: ReactNode;
   progress: Boolean;
 }
 
-export const BooksElement: React.FC<Props> = ({
-  bookName,
+export const ListElement: React.FC<Props> = ({
+  name,
   url,
   review,
   progress,
@@ -28,7 +28,7 @@ export const BooksElement: React.FC<Props> = ({
         {displayIcon}
         <Link href={url} target="_blank">
           <Stack direction={"row"} alignItems={"center"} spacing={1}>
-            <Typography fontWeight={"bold"}>{bookName}</Typography>
+            <Typography fontWeight={"bold"}>{name}</Typography>
             <OpenInNew fontSize="small" />
           </Stack>
         </Link>
