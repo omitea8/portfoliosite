@@ -6,7 +6,7 @@ import { Logo } from "../../components/Logo";
 
 const AboutPage: React.FC = () => {
   return (
-    <Stack spacing={3}>
+    <Stack spacing={5}>
       <Logo size="h3" name="About" />
       <Stack spacing={1}>
         <Stack direction="row" alignItems={"center"} spacing={1}>

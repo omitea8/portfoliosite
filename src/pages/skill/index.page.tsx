@@ -63,7 +63,7 @@ const SkillPage: React.FC = () => {
   ];
 
   return (
-    <Stack spacing={3}>
+    <Stack spacing={5}>
       <Logo size="h3" name="Skill" />
       <Typography variant="subtitle2">
         問題やわからないことは検索などをして解決し、一人で作業を任されても問題のないレベルを100%としています。
