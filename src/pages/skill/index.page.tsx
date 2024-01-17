@@ -36,18 +36,18 @@ const SkillPage: React.FC = () => {
   const frameworksAndLibrarySkill = [
     { name: "React", level: 80, icon: <SiReact /> },
     { name: "Next.js", level: 50, icon: <SiNextdotjs /> },
-    { name: "Ruby on Rails", level: 30, icon: <SiRubyonrails /> },
+    { name: "Ruby on Rails", level: 50, icon: <SiRubyonrails /> },
     { name: "MUI", level: 80, icon: <SiMui /> },
   ];
   const infrastructureSkill = [
     { name: "AWS(S3)", level: 60, icon: <SiAmazonaws /> },
-    { name: "Vercel", level: 30, icon: <SiVercel /> },
+    { name: "Vercel", level: 60, icon: <SiVercel /> },
     { name: "Heroku", level: 30, icon: <SiHeroku /> },
-    { name: "Render", level: 30, icon: <SiRender /> },
+    { name: "Render", level: 60, icon: <SiRender /> },
   ];
   const otherSkill = [
-    { name: "Git", level: 80, icon: <SiGit /> },
-    { name: "GitHub", level: 80, icon: <SiGithub /> },
+    { name: "Git", level: 100, icon: <SiGit /> },
+    { name: "GitHub", level: 100, icon: <SiGithub /> },
     {
       name: "アジャイル・スクラム開発の基礎知識",
       level: 80,
