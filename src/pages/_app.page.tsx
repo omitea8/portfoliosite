@@ -6,7 +6,7 @@ import "../styles/globals.css";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Container maxWidth={"lg"} sx={{ paddingBottom: "30px" }}>
+      <Container maxWidth={"lg"} sx={{ paddingBottom: "100px" }}>
         <Stack spacing={3}>
           <MenuBar />
           <Component {...pageProps} />
