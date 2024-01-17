@@ -85,7 +85,7 @@ export const OutputElement: React.FC<Props> = ({
         )}
         {usage && (
           <Stack>
-            <Typography variant="subtitle2" fontWeight={"bold"}>
+            <Typography variant="h6" fontWeight={"bold"}>
               機能
             </Typography>
             <Stack spacing={1}>
@@ -96,7 +96,7 @@ export const OutputElement: React.FC<Props> = ({
         )}
         {concept && (
           <Stack>
-            <Typography variant="subtitle2" fontWeight={"bold"}>
+            <Typography variant="h6" fontWeight={"bold"}>
               目的とコンセプト
             </Typography>
             <Stack spacing={1}>
@@ -108,7 +108,7 @@ export const OutputElement: React.FC<Props> = ({
 
         {problems && (
           <Stack>
-            <Typography variant="subtitle2" fontWeight={"bold"}>
+            <Typography variant="h6" fontWeight={"bold"}>
               難しかった課題
             </Typography>
             <Stack spacing={1}>
