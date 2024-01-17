@@ -92,5 +92,16 @@ export const TechChip: React.FC<Props> = ({ tech }) => {
     else return <></>;
   };
 
-  return <Chip variant="outlined" label={tech} icon={techIcon(tech)} />;
+  return (
+    <Chip
+      variant="outlined"
+      label={tech}
+      sx={{
+        "& .MuiChip-icon": {
+          marginLeft: "10px",
+        },
+      }}
+      icon={techIcon(tech)}
+    />
+  );
 };
