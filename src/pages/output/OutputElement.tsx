@@ -1,4 +1,4 @@
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Divider, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import React, { ReactNode } from "react";
 import Link from "next/link";
