@@ -29,17 +29,21 @@ export const StudyElement: React.FC<Props> = ({
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-        <Typography color="text.secondary">{day}</Typography>
-        <Typography fontWeight={"bold"}>{title}</Typography>
-        <Typography>{description}</Typography>
-        {url && (
-          <Link href={url} target="_blank">
-            <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
-              <Typography variant="body2">学習記録</Typography>
-              <OpenInNew fontSize="small" />
-            </Stack>
-          </Link>
-        )}
+        <Stack spacing={2} mb={3}>
+          <Typography color="text.secondary">{day}</Typography>
+          <Stack spacing={1}>
+            <Typography fontWeight={"bold"}>{title}</Typography>
+            <Typography>{description}</Typography>
+          </Stack>
+          {url && (
+            <Link href={url} target="_blank">
+              <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
+                <Typography variant="body2">学習記録</Typography>
+                <OpenInNew fontSize="small" />
+              </Stack>
+            </Link>
+          )}
+        </Stack>
       </TimelineContent>
     </TimelineItem>
   );

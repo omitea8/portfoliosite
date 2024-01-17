@@ -31,46 +31,48 @@ export const OutputElement: React.FC<Props> = ({
   problems,
 }) => {
   return (
-    <Stack spacing={1}>
-      <Typography variant="h6">{overview}</Typography>
-      <Stack direction="row" alignItems={"center"} spacing={3}>
-        <Link href={url} target="_blank">
-          <Stack direction="row" alignItems={"center"} spacing={0.5}>
-            <Typography variant="h4">{name}</Typography>
-            <OpenInNew fontSize="large" />
+    <Stack spacing={3}>
+      <Stack spacing={0}>
+        <Typography variant="h6">{overview}</Typography>
+        <Stack direction="row" alignItems={"center"} spacing={3}>
+          <Link href={url} target="_blank">
+            <Stack direction="row" alignItems={"center"} spacing={0.5}>
+              <Typography variant="h4">{name}</Typography>
+              <OpenInNew fontSize="large" />
+            </Stack>
+          </Link>
+
+          <Stack
+            direction="row"
+            alignItems={"center"}
+            spacing={2}
+            flexWrap={"wrap"}
+          >
+            {frontendRepositoryUrl && (
+              <Link href={frontendRepositoryUrl} target="_blank">
+                <Stack direction="row" alignItems={"center"} spacing={0.5}>
+                  <GitHub fontSize="small" />
+                  <Typography variant="subtitle1">frontend</Typography>
+                </Stack>
+              </Link>
+            )}
+            {backendRepositoryUrl && (
+              <Link href={backendRepositoryUrl} target="_blank">
+                <Stack direction="row" alignItems={"center"} spacing={0.5}>
+                  <GitHub fontSize="small" />
+                  <Typography variant="subtitle1">backend</Typography>
+                </Stack>
+              </Link>
+            )}
           </Stack>
-        </Link>
-        <Stack
-          direction="row"
-          alignItems={"center"}
-          spacing={2}
-          flexWrap={"wrap"}
-        >
-          {frontendRepositoryUrl && (
-            <Link href={frontendRepositoryUrl} target="_blank">
-              <Stack direction="row" alignItems={"center"} spacing={0.5}>
-                <GitHub fontSize="small" />
-                <Typography variant="subtitle1">frontend</Typography>
-              </Stack>
-            </Link>
-          )}
-          {backendRepositoryUrl && (
-            <Link href={backendRepositoryUrl} target="_blank">
-              <Stack direction="row" alignItems={"center"} spacing={0.5}>
-                <GitHub fontSize="small" />
-                <Typography variant="subtitle1">backend</Typography>
-              </Stack>
-            </Link>
-          )}
         </Stack>
       </Stack>
-
-      <Stack direction={"row"} spacing={0.5} flexWrap={"wrap"}>
+      <Stack direction={"row"} spacing={1} flexWrap={"wrap"}>
         {tech.map((tech) => (
           <TechChip key={tech} tech={tech} />
         ))}
       </Stack>
-      <Stack spacing={3}>
+      <Stack spacing={5}>
         {imageSource && (
           <Image
             src={imageSource}
@@ -92,19 +94,18 @@ export const OutputElement: React.FC<Props> = ({
             </Stack>
           </Stack>
         )}
-        <Stack spacing={1}>
-          {concept && (
-            <Stack>
-              <Typography variant="subtitle2" fontWeight={"bold"}>
-                目的とコンセプト
-              </Typography>
-              <Stack spacing={1}>
-                <Divider />
-                {concept}
-              </Stack>
+        {concept && (
+          <Stack>
+            <Typography variant="subtitle2" fontWeight={"bold"}>
+              目的とコンセプト
+            </Typography>
+            <Stack spacing={1}>
+              <Divider />
+              {concept}
             </Stack>
-          )}
-        </Stack>
+          </Stack>
+        )}
+
         {problems && (
           <Stack>
             <Typography variant="subtitle2" fontWeight={"bold"}>
@@ -116,7 +117,7 @@ export const OutputElement: React.FC<Props> = ({
             </Stack>
           </Stack>
         )}
-      </Stack>
+      </Stack>{" "}
     </Stack>
   );
 };

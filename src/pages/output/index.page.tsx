@@ -4,9 +4,9 @@ import { Logo } from "../../components/Logo";
 
 const OutPutPage: React.FC = () => {
   return (
-    <Stack spacing={3}>
+    <Stack spacing={5}>
       <Logo size="h3" name="Output" />
-      <Stack spacing={5}>
+      <Stack spacing={17}>
         {/* caita */}
         <OutputElement
           name="caita"
