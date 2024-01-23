@@ -36,30 +36,29 @@ const studyPage = () => {
             url="https://www.notion.so/caita-1ccf1ed783a543fc98e7a6057fdc78f0?pvs=4"
             day="2023/01-"
             title="自主開発(画像投稿Webアプリケーション)を開始"
-            description="学んだ知識を活かしてさらに実践的なものを作ろうと考えていたためこの開発に至りました。また、このアプリケーションが自身のエンジニアリングの動機でもあります。"
+            description="学んだ知識を活かしてさらに実践的なものを作ろうと考えていたためこの開発に至りました。また、このアプリケーションをつくることが自身のエンジニアリングの動機でもあります。"
           />
           {/* スクラムガイド */}
           <StudyElement
             day="2022/12-"
-            title="スクラムガイド2020でスクラム開発の基礎について学ぶ"
+            title="「スクラムガイド2020」でスクラム開発の基礎について学ぶ"
             description="
-              認定スクラムマスターの資格保有者とスクラムガイドの読み合わせを通してスクラムの基礎について学びました。開発手法としてアジャイル開発やスクラムが多く使われていると知り学んでおいた方が良いと感じたためこの読み合わせを開催してもらいました。また、自主開発においてもスクラム開発で行っています。"
+              認定スクラムマスターの資格保有者と一緒に行ったスクラムガイドの読み合わせを通してスクラムの基礎について学びました。開発手法としてアジャイル開発やスクラムが多く使われていると知り学んでおいた方が良いと感じたためこの読み合わせを開催しました。また、自主開発においても一部スクラム開発に則り行っています。"
           />
           {/* Railsチュートリアル */}
           <StudyElement
             url="https://www.notion.so/Rails-2e2965d4328942968e8818517dd8b120?pvs=4"
             day="2022/10-"
-            title="Rails TutorialでRuby on Railsの基礎を学ぶ"
+            title="「Rails Tutorial」でRuby on Railsの基礎を学ぶ"
             description="
               簡単なWebアプリケーション作成を通してバックエンドの技術やフロントエンドとの関わりを知るために学びました。日本企業ではRuby
-              on
-              Railsでのアプリケーション開発も活発と知り、このチュートリアルを選択しました。"
+              on Railsでのアプリケーション開発も活発と知り、このチュートリアルを選択しました。"
           />
           {/* WEB技術がこれ1冊でしっかりわかる教科書 */}
           <StudyElement
             url="https://www.notion.so/WEB-1-8c46853fb6974873a8bca5debfefac91?pvs=4"
             day="2022/10-"
-            title="書籍WEB技術がこれ1冊でしっかりわかる教科書でWebの仕組みについて学ぶ"
+            title="書籍「WEB技術がこれ1冊でしっかりわかる教科書」でWebの仕組みについて学ぶ"
             description="
               Webの仕組みや用語について体系的に学んだ経験がなかったため、どうやってWebが成り立っているかなど基礎的なことを学びました。"
           />
@@ -67,7 +66,7 @@ const studyPage = () => {
           <StudyElement
             url="https://www.notion.so/SQL-aa0b4ce458834185befd4c25eb1d0ac8?pvs=4"
             day="2022/09-"
-            title="書籍わかりみSQLでSQL(PostgreSQL)を学ぶ"
+            title="書籍「わかりみSQL」でSQL(PostgreSQL)を学ぶ"
             description="
               実際にアプリケーションを作成するときに関連する技術全体の知識があった方が良いと考えたため、データベースについて基礎的なことを学びました。"
           />
@@ -75,7 +74,7 @@ const studyPage = () => {
           <StudyElement
             url="https://www.notion.so/70a624b08c8e4039b45ecdb24e749f39?pvs=4"
             day="2022/06-"
-            title="書籍りあクト!でJavaScript,TypeScript,Reactの基礎を学ぶ"
+            title="書籍「りあクト!」でJavaScript,TypeScript,Reactの基礎を学ぶ"
             description="
               近年のフロントエンドはReactやNext.jsなどが多く使われていると知り汎用性を考え、今回はReactを選択しました。また、JavaScriptの基礎は他の言語でも応用できると思い、ひとまずはReactで使う技術のみに集中しました。"
           />
@@ -83,9 +82,9 @@ const studyPage = () => {
           <StudyElement
             url="https://www.notion.so/JavaScript-CSS-WEB-0e63a6dcb35c484895c30494ed0dcb85?pvs=4"
             day="2022/04-"
-            title="Udemyの動画でHTML5とCSS3の基礎を学ぶ"
+            title="UdemyでHTML5とCSS3の基礎を学ぶ"
             description="
-              HTMLは学生のころ少しだけ触ったことがあったため、比較的入りやすいと思いまずはHTMLとCSSの基礎を学びました。"
+              HTMLは学生のころ少しだけ触ったことがあったため比較的入りやすいと思い、まずはHTMLとCSSの基礎を学びました。"
           />
         </Timeline>
       </Stack>
@@ -185,7 +184,7 @@ const studyPage = () => {
         <ListElement
           name="Zenn,しずかなインターネット「どうやって開発したの？」開発者catnoseさんにきいてみた"
           url="https://findy.connpass.com/event/306774/"
-          progress={true}
+          progress={false}
         />
         <ListElement
           name="フロントエンドの技術選定 ~2023を振り返る~ Lunch LT"
