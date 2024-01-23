@@ -19,7 +19,6 @@ const studyPage = () => {
         >
           {/* フロントエンドのテスト */}
           <StudyElement
-            url="https://www.notion.so/c23a9d77e3e74ba3bdf83a990753171b?pvs=4"
             day="2023/10-"
             title="フロントエンド開発のテストについて学ぶ"
             description="フロントエンドのテストについての手法や使い分けなど具体的なことについて知識不足を感じたため学習を始めました。"
