@@ -65,9 +65,27 @@ const SkillPage: React.FC = () => {
   return (
     <Stack spacing={5}>
       <Logo size="h3" name="Skill" />
-      <Typography variant="subtitle2">
-        問題やわからないことは検索などをして解決し、一人で作業を任されても問題のないレベルを100%としています。
-      </Typography>
+      <Stack spacing={0}>
+        <Typography variant="subtitle1">数値の目安</Typography>
+        <Stack direction={"row"} spacing={2}>
+          <Stack spacing={0}>
+            <Typography variant="subtitle2">30%</Typography>
+            <Typography variant="subtitle2">50%</Typography>
+            <Typography variant="subtitle2">80%</Typography>
+            <Typography variant="subtitle2">100%</Typography>
+          </Stack>
+          <Stack spacing={0}>
+            <Typography variant="subtitle2">: 勉強中</Typography>
+            <Typography variant="subtitle2">: 基本的な操作ができる </Typography>
+            <Typography variant="subtitle2">
+              : 助けを借りながら一人で操作できる
+            </Typography>
+            <Typography variant="subtitle2">
+              : 大体のことが一人で問題なく操作ができる
+            </Typography>
+          </Stack>
+        </Stack>
+      </Stack>
       <Stack spacing={5}>
         <SkillLevelSet category={"プログラミング言語"} skills={languageSkill} />
         <SkillLevelSet
