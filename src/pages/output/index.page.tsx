@@ -1,6 +1,7 @@
 import { Stack, Typography } from "@mui/material";
 import { OutputElement } from "./OutputElement";
 import { Logo } from "../../components/Logo";
+import Link from "next/link";
 
 const OutPutPage: React.FC = () => {
   return (
@@ -50,13 +51,26 @@ const OutPutPage: React.FC = () => {
                 <Typography>1, 複雑なロジックの構築</Typography>
                 <Typography>
                   機能を実装するために、プログラムの流れを計画する作業が、想像していたよりも大変でした。フロントエンドやバックエンドやDB、その他外部のシステムとの連携などをどういう順番で呼び出すのかやどういった形で返ってくるのか、受け取った後どうするのかなど考えることがたくさんありました。
-                  全体の流れをシーケンス図で書き、整理してから機能の実装をすることにしました。書き出すことで頭の中が整理されて、視覚的にも分かりやすく、次に何をするのかも明確になったので、開発がスムーズに進ようになったと思います。
+                  全体の流れを
+                  <Link
+                    href={
+                      "https://www.notion.so/a1ea5d4e833741319088f60939ab9b48?pvs=4"
+                    }
+                    target="_block"
+                  >
+                    シーケンス図
+                  </Link>
+                  で書き、整理してから機能の実装をすることにしました。書き出すことで頭の中が整理されて、視覚的にも分かりやすく、次に何をするのかも明確になったので、開発がスムーズに進ようになったと思います。
                 </Typography>
               </Stack>
               <Stack>
                 <Typography>2, フレームワークの適切な選定と利用</Typography>
                 <Typography>
-                  バックエンドにRails、フロントエンドにReactを採用しました。RailsTutorialで作った機能と似たところが多かったため応用して開発を進めようと考えていましたが、フロントエンドとバックエンドを別々の言語・フレームワークにしたこととRailsはAPIモードを使ったことにより、RailsTutorialとは同じようにはいきませんでした。
+                  バックエンドにRails、フロントエンドにReactを採用しました。
+                  <Link href={"https://railstutorial.jp/"} target="_block">
+                    RailsTutorial
+                  </Link>
+                  で作った機能と似たところが多かったため応用して開発を進めようと考えていましたが、フロントエンドとバックエンドを別々の言語・フレームワークにしたこととRailsはAPIモードを使ったことにより、RailsTutorialとは同じようにはいきませんでした。
                   エラーを解決することは大変でしたが、エラーが出ても冷静にエラーメッセージを読み対応する力が付いたと思います。また、フレームワークの選定とプロジェクトの設計における考慮点の重要性を理解する良い機会となりました。
                 </Typography>
               </Stack>
