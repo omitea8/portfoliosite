@@ -29,21 +29,18 @@ const AboutPage: React.FC = () => {
           これまではアプリケーションの開発の全体を把握できるよう手広く学んできました。今後はフロントエンドの技術に集中し、より専門的な知識を身につけていきたいと考えています。
         </Typography>
       </Stack>
-      <Stack spacing={2}>
-        <Typography variant="h4">経歴</Typography>
-        <HistoryElement
-          day="~2008"
-          title="私立済美高等学校 美術科"
-          // description="素描を始め油絵や日本画や彫刻、歴史など幅広く美術について学びました。専攻はデザインで、商業デザインについて学びながら作品と向き合うことを体験しました。"
-        />
-        <HistoryElement
-          day="~2010"
-          title="日本電子専門学校 アニメーション科"
-          // description="アニメ作成の一通りを学びました。背景の作画とAEを使った撮影などを主に担当し、大人数でのチーム制作を体験しました。"
-        />
-        <HistoryElement day="~2013" title="飲食店アルバイト" />
-        <HistoryElement day="~2022" title="派遣社員として一般事務" />
-        <HistoryElement day="~現在" title="エンジニアになるために勉強中" />
+      <Stack spacing={1}>
+        <Typography variant="h5">できること</Typography>
+        <ul>
+          <li>フロントエンド・バックエンド開発</li>
+          <li>フロントエンドにおけるテストの実装</li>
+          <li>IaaSへのプロダクトのデプロイ</li>
+          <li>サービスのコンセプト設計からリリース</li>
+          <li>調査したことや設計方針についての文書化</li>
+          <li>DB テーブル設計</li>
+          <li>SQL による操作</li>
+          <li>これらについてメンターの助けを求めつつ独立で身につける自走力</li>
+        </ul>
       </Stack>
     </Stack>
   );
