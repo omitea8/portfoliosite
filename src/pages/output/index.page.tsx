@@ -167,9 +167,15 @@ const OutPutPage: React.FC = () => {
         {/* Notion */}
         <OutputElement
           name="Notion"
+          imageSource="/notion1.png"
           url="https://www.notion.so/programming-2c75a15d726944b7b1a386b35868c678?pvs=4"
           tech={["Notion"]}
-          overview="日々の勉強や開発の記録"
+          overview="日々の学習や開発の記録"
+          concept={
+            <Typography>
+              学んだことや開発の記録のためにNotionを利用しました。学習では学んだことの記録・復習のため、開発では主に設計の過程や開発のToDoなどの記録を記録しています。アウトプットや人に伝えることの練習も兼ね文章にすることを心がけています。また、MermaidやMarkdownなど実務を意識して記法に慣れるために積極的に使っています。
+            </Typography>
+          }
         />
       </Stack>
     </Stack>
