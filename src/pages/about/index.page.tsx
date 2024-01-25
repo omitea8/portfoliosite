@@ -1,7 +1,6 @@
 import { IconButton, Stack, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { HistoryElement } from "./HistoryElement";
 import { Logo } from "../../components/Logo";
 
 const AboutPage: React.FC = () => {
