@@ -148,7 +148,11 @@ const studyPage = () => {
           name="フロントエンド開発のためのテスト入門 今からでも知っておきたい自動テスト戦略の必須知識"
           url="https://amzn.asia/d/6DK0LpD"
           progress={false}
-          // review={<Typography>ああ</Typography>}
+        />
+        <ListElement
+          name="体系的に学ぶ 安全なWebアプリケーションの作り方 脆弱性が生まれる原理と対策の実践"
+          url="脆弱性が生まれる原理と対策の実践"
+          progress={true}
         />
         <ListElement
           name="テスト駆動開発）"
@@ -188,11 +192,16 @@ const studyPage = () => {
         <ListElement
           name="フロントエンドの技術選定 ~2023を振り返る~ Lunch LT"
           url="https://findy.connpass.com/event/306714/"
-          progress={true}
+          progress={false}
         />
         <ListElement
           name="プロダクトマネジメントのすべて著者 及川さんに聞く 技術から価値を生み出すエンジニアになるには"
           url="https://offers.connpass.com/event/307595/"
+          progress={false}
+        />
+        <ListElement
+          name="インシデントマネジメント 事態収拾のための取り組みに迫る Lunch LT"
+          url="https://findy.connpass.com/event/309400/"
           progress={true}
         />
       </Stack>
