@@ -1,9 +1,9 @@
-import OutPutPage from "./output/index.page";
+import ProductsPage from "./products/index.page";
 
 export default function Home() {
   return (
     <>
-      <OutPutPage />
+      <ProductsPage />
     </>
   );
 }

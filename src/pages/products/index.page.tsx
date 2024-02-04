@@ -1,15 +1,15 @@
 import { Stack, Typography } from "@mui/material";
-import { OutputElement } from "./OutputElement";
+import { ProductsElement } from "./ProductsElement";
 import { Logo } from "../../components/Logo";
 import Link from "next/link";
 
-const OutPutPage: React.FC = () => {
+const ProductsPage: React.FC = () => {
   return (
     <Stack spacing={5}>
-      <Logo size="h3" name="Output" />
+      <Logo size="h3" name="Products" />
       <Stack spacing={17}>
         {/* caita */}
-        <OutputElement
+        <ProductsElement
           name="caita"
           imageSource="/caita2.png"
           url="https://caita.today/"
@@ -79,7 +79,7 @@ const OutPutPage: React.FC = () => {
         />
 
         {/* AI Portal */}
-        <OutputElement
+        <ProductsElement
           name="AI Portal"
           imageSource="/ai1.png"
           url="https://ai-portal.tech/"
@@ -131,7 +131,7 @@ const OutPutPage: React.FC = () => {
         />
 
         {/* portfolio Site */}
-        <OutputElement
+        <ProductsElement
           name="omi.t's portfolio"
           imageSource="/portfolio1.png"
           url="https://omitea8.vercel.app/"
@@ -165,7 +165,7 @@ const OutPutPage: React.FC = () => {
         />
 
         {/* Notion */}
-        <OutputElement
+        <ProductsElement
           name="Notion"
           imageSource="/notion1.png"
           url="https://www.notion.so/programming-2c75a15d726944b7b1a386b35868c678?pvs=4"
@@ -182,4 +182,4 @@ const OutPutPage: React.FC = () => {
   );
 };
 
-export default OutPutPage;
+export default ProductsPage;

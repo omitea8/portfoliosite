@@ -6,12 +6,12 @@ import { Logo } from "./Logo";
 
 const MenuBar = () => {
   const router = useRouter();
-  const [value, setValue] = React.useState<string>("output");
+  const [value, setValue] = React.useState<string>("products");
 
   React.useEffect(() => {
     switch (router.pathname) {
-      case "/output":
-        setValue("output");
+      case "/products":
+        setValue("products");
         break;
       case "/skill":
         setValue("skill");
@@ -23,7 +23,7 @@ const MenuBar = () => {
         setValue("about");
         break;
       default:
-        setValue("output");
+        setValue("products");
         break;
     }
   }, [router.pathname]);
@@ -32,8 +32,8 @@ const MenuBar = () => {
     setValue(newValue);
 
     switch (newValue) {
-      case "output":
-        router.push("/output");
+      case "products":
+        router.push("/products");
         break;
       case "skill":
         router.push("/skill");
@@ -74,7 +74,7 @@ const MenuBar = () => {
             },
           }}
         >
-          <Tab label="Output" value="output" />
+          <Tab label="Products" value="products" />
           <Tab label="Skill" value="skill" />
           <Tab label="Study" value="study" />
           <Tab label="About" value="about" />

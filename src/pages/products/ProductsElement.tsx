@@ -18,7 +18,7 @@ interface Props {
   problems?: ReactNode;
 }
 
-export const OutputElement: React.FC<Props> = ({
+export const ProductsElement: React.FC<Props> = ({
   name,
   imageSource,
   url,
