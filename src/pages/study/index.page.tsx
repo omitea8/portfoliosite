@@ -94,55 +94,41 @@ const studyPage = () => {
           name="りあクト!(1)"
           url="https://oukayuka.booth.pm/items/2368045"
           progress={false}
-          // review={<Typography>ああ</Typography>}
         />
         <ListElement
           name="りあクト!(2)"
           url="https://oukayuka.booth.pm/items/2368019"
           progress={false}
-          // review={<Typography>ああ</Typography>}
         />
         <ListElement
           name="わかりみSQL"
           url="https://booth.pm/ja/items/1576397"
           progress={false}
-          // review={<Typography>ああ</Typography>}
         />
         <ListElement
           name="WEB技術がこれ1冊でしっかりわかる教科書"
           url="https://amzn.asia/d/37McFoz"
           progress={false}
-          // review={<Typography>ああ</Typography>}
         />
         <ListElement
           name="スクラムガイド 2020"
           url="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Japanese.pdf"
           progress={false}
-          // review={<Typography>ああ</Typography>}
         />
         <ListElement
           name="リータブルコード"
           url="https://amzn.asia/d/9UkRVZK"
           progress={false}
-          // review={<Typography>ああ</Typography>}
         />
         <ListElement
           name="アジャイルサムライ"
           url="https://amzn.asia/d/idC4ZEk"
           progress={false}
-          // review={
-          //   <Typography>
-          //     この本を読んでアジャイルのやり方の知識を得るのは簡単なことだが、継続的な改善やよりよいコードを書くという気持ちを忘れないことは難しいと感じた。すぐには身につかないと思うが、快適な開発のためにも、常に改善への努力を忘れないようにしたい。
-          //   </Typography>
-          // }
         />
         <ListElement
           name="JavaScript Promiseの本"
           url="https://azu.github.io/promises-book/"
           progress={false}
-          // review={
-          //   <Typography>ああ</Typography>
-          // }
         />
         <ListElement
           name="フロントエンド開発のためのテスト入門 今からでも知っておきたい自動テスト戦略の必須知識"
@@ -155,10 +141,9 @@ const studyPage = () => {
           progress={true}
         />
         <ListElement
-          name="テスト駆動開発）"
+          name="テスト駆動開発"
           url="https://amzn.asia/d/iZoWN64"
           progress={true}
-          // review={<Typography>ああ</Typography>}
         />
       </Stack>
 

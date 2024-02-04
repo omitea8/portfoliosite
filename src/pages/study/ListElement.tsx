@@ -14,12 +14,7 @@ interface Props {
   progress: Boolean;
 }
 
-export const ListElement: React.FC<Props> = ({
-  name,
-  url,
-  review,
-  progress,
-}) => {
+export const ListElement: React.FC<Props> = ({ name, url, progress }) => {
   const displayIcon = progress ? <CircleOutlined /> : <CheckCircleOutline />;
 
   return (
@@ -33,7 +28,6 @@ export const ListElement: React.FC<Props> = ({
           </Stack>
         </Link>
       </Stack>
-      {review}
     </Stack>
   );
 };
