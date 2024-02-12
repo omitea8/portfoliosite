@@ -101,7 +101,7 @@ export const TechChip: React.FC<Props> = ({ tech }) => {
       label={tech}
       sx={{
         "& .MuiChip-icon": {
-          marginLeft: "12px",
+          marginLeft: "11px",
         },
       }}
       icon={techIcon(tech)}
