@@ -93,6 +93,7 @@ const ProductsPage: React.FC = () => {
             "React",
             "Next.js",
             "Node.js",
+            "Express",
             "PostgreSQL",
             "OpenAI",
             "Vercel",

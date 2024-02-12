@@ -9,6 +9,7 @@ import {
   SiReact,
   SiNextdotjs,
   SiRubyonrails,
+  SiExpress,
   SiMui,
   SiAmazonaws,
   SiVercel,
@@ -37,6 +38,7 @@ export type Tech =
   | "Node.js"
   | "Next.js"
   | "Ruby on Rails"
+  | "Express"
   | "MUI"
   | "react-icons"
   | "AWS(S3)"
@@ -71,6 +73,7 @@ export const TechChip: React.FC<Props> = ({ tech }) => {
     else if (tech === "Node.js") return <SiNodedotjs />;
     else if (tech === "Next.js") return <SiNextdotjs />;
     else if (tech === "Ruby on Rails") return <SiRubyonrails />;
+    else if (tech === "Express") return <SiExpress />;
     else if (tech === "MUI") return <SiMui />;
     else if (tech === "react-icons") return <SiReact />;
     else if (tech === "AWS(S3)") return <SiAmazonaws />;
