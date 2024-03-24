@@ -137,7 +137,7 @@ const studyPage = () => {
         />
         <ListElement
           name="体系的に学ぶ 安全なWebアプリケーションの作り方 脆弱性が生まれる原理と対策の実践"
-          url="脆弱性が生まれる原理と対策の実践"
+          url="https://amzn.asia/d/fffQzny"
           progress={true}
         />
         <ListElement
