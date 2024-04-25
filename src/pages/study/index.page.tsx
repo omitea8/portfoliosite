@@ -19,6 +19,19 @@ const studyPage = () => {
         >
           {/* フロントエンドのテスト */}
           <StudyElement
+            url="https://www.notion.so/caita-1ccf1ed783a543fc98e7a6057fdc78f0"
+            day="2024/04-"
+            title="自主開発(画像投稿Webアプリケーション)仮リリース"
+            description="基本的な機能の開発が終わったため、仮リリースを行いました。使用感や不具合などを知人にフィードバックしてもらい、さらなる改善と新機能の追加や見た目のブラッシュアップを行う予定です。"
+          />
+          {/* フロントエンドのテスト */}
+          <StudyElement
+            day="2024/02-"
+            title="Webアプリケーションのセキュリティについて学ぶ"
+            description="自主開発を本格的に稼働させるためにセキュリティについて学習を始めました。"
+          />
+          {/* フロントエンドのテスト */}
+          <StudyElement
             day="2023/10-"
             title="フロントエンド開発のテストについて学ぶ"
             description="フロントエンドのテストについての手法や使い分けなど具体的なことについて知識不足を感じたため学習を始めました。"
@@ -55,7 +68,6 @@ const studyPage = () => {
           />
           {/* WEB技術がこれ1冊でしっかりわかる教科書 */}
           <StudyElement
-            url="https://www.notion.so/WEB-1-8c46853fb6974873a8bca5debfefac91?pvs=4"
             day="2022/10-"
             title="書籍「WEB技術がこれ1冊でしっかりわかる教科書」でWebの仕組みについて学ぶ"
             description="
@@ -187,7 +199,7 @@ const studyPage = () => {
         <ListElement
           name="インシデントマネジメント 事態収拾のための取り組みに迫る Lunch LT"
           url="https://findy.connpass.com/event/309400/"
-          progress={true}
+          progress={false}
         />
       </Stack>
     </Stack>
