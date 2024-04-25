@@ -89,7 +89,6 @@ const ProductsPage: React.FC = () => {
         <ProductsElement
           name="AI Portal"
           imageSource="/ai1.png"
-          url="https://ai-portal.tech/"
           tech={[
             "HTML",
             "CSS",
