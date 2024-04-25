@@ -8,7 +8,7 @@ import { Tech, TechChip } from "./TechChip";
 interface Props {
   name: string;
   imageSource?: string;
-  url: string;
+  url?: string;
   frontendRepositoryUrl?: string;
   backendRepositoryUrl?: string;
   tech: Tech[];
@@ -35,12 +35,16 @@ export const ProductsElement: React.FC<Props> = ({
       <Stack spacing={0}>
         <Typography variant="h6">{overview}</Typography>
         <Stack direction="row" alignItems={"center"} spacing={3}>
-          <Link href={url} target="_blank">
-            <Stack direction="row" alignItems={"center"} spacing={0.5}>
-              <Typography variant="h4">{name}</Typography>
-              <OpenInNew fontSize="large" />
-            </Stack>
-          </Link>
+          {url ? (
+            <Link href={url} target="_blank">
+              <Stack direction="row" alignItems={"center"} spacing={0.5}>
+                <Typography variant="h4">{name}</Typography>
+                <OpenInNew fontSize="large" />
+              </Stack>
+            </Link>
+          ) : (
+            <Typography variant="h4">{name}</Typography>
+          )}
 
           <Stack
             direction="row"
